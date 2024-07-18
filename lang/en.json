@@ -1,0 +1,16 @@
+{
+  "prefix": "{darkblue}[{blue}EC{darkblue}] {grey}",
+  "ec_action_map": "%prefix%{darkblue}{0}{grey}{1} {yellow}{2}.",
+  "ec_action_mode": "%prefix%{darkblue}{0}{grey}{1} {purple}{2}.",
+  "ec_action_enable": "%prefix%{darkblue}{0}{grey}{1} {lightgreen}{2}.",
+  "ec_action_disable": "%prefix%{darkblue}{0}{grey}{1} {lightred}{2}.",
+  "command_status_err_not_started": "%prefix%No event started.",
+  "command_status_err_event_started": "%prefix%Event status already started.",
+  "command_status_event_started": "%prefix%{darkblue}{0}{grey} Started event status.",
+  "command_status_event_stopped": "%prefix%{darkblue}{0}{grey} Stopped event status.",
+  "command_status_printed": "%prefix%Event status printed in console.",
+  "log_status_header": "=== Begin Event Logs (Duration: {0}) - (Peak: {1} players) ===",
+  "log_status_body": "{0}",
+  "log_status_footer": "=== End Event Logs ===",
+  "error_announcement_unkown": "{darkred}ERROR: Services.Announcer.Type Unknown | Please Contact ShookEagle"
+}
