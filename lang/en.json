@@ -1,5 +1,6 @@
 {
   "prefix": "{darkblue}[{blue}EC{darkblue}] {grey}",
+  "test": "%prefix%This message is for testing | if you see this please contact ShookEagle ",
   "ec_action_map": "%prefix%{darkblue}{0}{grey}{1} {yellow}{2}.",
   "ec_action_mode": "%prefix%{darkblue}{0}{grey}{1} {purple}{2}.",
   "ec_action_enable": "%prefix%{darkblue}{0}{grey}{1} {lightgreen}{2}.",
@@ -12,5 +13,5 @@
   "log_status_header": "=== Begin Event Logs (Duration: {0}) - (Peak: {1} players) ===",
   "log_status_body": "{0}",
   "log_status_footer": "=== End Event Logs ===",
-  "error_announcement_unkown": "{darkred}ERROR: Services.Announcer.Type Unknown | Please Contact ShookEagle"
+  "error_announcement_unkown": "{darkred}ERROR: Services.Announcer.Type Unknown | Please contact ShookEagle"
 }

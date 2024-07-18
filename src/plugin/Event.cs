@@ -5,6 +5,8 @@ using plugin.listeners;
 using api.plugin;
 using api.plugin.services;
 using CounterStrikeSharp.API.Core;
+using plugin.services.ECMenuServices;
+using plugin.services.ECMenu;
 
 namespace plugin;
 
@@ -18,6 +20,7 @@ public class Event : BasePlugin, IPluginConfig<EventConfig>, IEvent
 
     private IStatusService? status;
     private IAnnouncer? announcer;
+    private IECMenu? eCMenu;
 
     public EventConfig Config { get; set; } = new();
     public void OnConfigParsed(EventConfig config)
@@ -32,6 +35,7 @@ public class Event : BasePlugin, IPluginConfig<EventConfig>, IEvent
 
     public IStatusService getStatusService() { return status!; }
     public IAnnouncer getAnnouncer() { return announcer!; }
+    public IECMenu getECMenu() { return eCMenu!; }
 
     public override void Load(bool hotReload)
     {
@@ -39,6 +43,8 @@ public class Event : BasePlugin, IPluginConfig<EventConfig>, IEvent
 
         status = new StatusService(this);
         announcer = new AnonymousAnnouncer(this);
+        eCMenu = new ECMenu(this);
+        
 
         LoadCommands();
     }
@@ -56,6 +62,8 @@ public class Event : BasePlugin, IPluginConfig<EventConfig>, IEvent
         commands.Add("css_stopevent", new EStopCmd(this));
         commands.Add("css_endevent", new EStopCmd(this));
         commands.Add("css_eventstop", new EStopCmd(this));
+
+        commands.Add("css_ec", new ECMenuCmd(this));
 
         foreach (var command in commands)
             AddCommand(command.Key, command.Value.Description ?? "No Description Provided", command.Value.OnCommand);
