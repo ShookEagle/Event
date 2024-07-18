@@ -24,16 +24,16 @@ public class ECMenu(IEvent baseEvent) : IECMenu
             new MenuValue("◄") { Prefix = "<font color=\"#0033FF\">", Suffix = "<font color=\"#FFFFFF\">" }
         ];
 
+        mainMenu.Selector =
+        [
+        new MenuValue("[ ") { Prefix = "<font color=\"#0033FF\">", Suffix = "<font color=\"#FFFFFF\">" },
+        new MenuValue(" ]") { Prefix = "<font color=\"#0033FF\">", Suffix = "<font color=\"#FFFFFF\">" }
+        ];
+
         mainMenu.AddItem(new MenuItem(MenuItemType.Button, [new MenuValue("Modes")]));
         mainMenu.AddItem(new MenuItem(MenuItemType.Button, [new MenuValue("Maps")]));
         mainMenu.AddItem(new MenuItem(MenuItemType.Button, [new MenuValue("Settings")]));
         mainMenu.AddItem(new MenuItem(MenuItemType.Button, [new MenuValue("Tools")]));
-
-        mainMenu.AddItem(new MenuItem(MenuItemType.Text, new MenuValue("Welcome to the new menu!")
-        {
-            Prefix = "<font color=\"#FF0000\">",
-            Suffix = "<font color=\"#FFFFFF\">"
-        }));
 
         Menu.SetMenu(controller, mainMenu, (buttons, menu, selectedItem) => 
         {
@@ -56,9 +56,4 @@ public class ECMenu(IEvent baseEvent) : IECMenu
             }
         });
     }
-}
-
-public class ButtonValue(string value, ButtonType button) : MenuValue(value)
-{
-    public ButtonType Button { get; set; } = button;
 }
