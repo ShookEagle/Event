@@ -1,21 +1,23 @@
 ﻿using api.plugin;
 using plugin.extensions;
 using CounterStrikeSharp.API.Core;
-using plugin.services.ECMenuServices;
+using api.plugin.services.menus;
 using shared.Menu;
 using shared.Menu.enums;
+using plugin.enums;
+using CounterStrikeSharp.API;
 
-namespace plugin.services.ECMenu;
+namespace plugin.services.menus;
 public class ECMenu(IEvent baseEvent) : IECMenu
 {
     public Menu Menu { get; } = new();
 
-    public void BuildECMenu(CCSPlayerController controller)
+    public void BuildECMenu(CCSPlayerController controller, GoToSubMenu toSubMenu = GoToSubMenu.None)
     {
         var mainMenu = new MenuBase(new MenuValue("EC Menu")
         {
-            Prefix = "<font class=\"fontSize-L\">",
-            Suffix = "<font class=\"fontSize-sm\">"
+            Prefix = "<font class=\"fontSize-L\"><font color=\"#3399FF\">",
+            Suffix = "<font color=\"#FFFFFF\"><font class=\"fontSize-m\">"
         });
 
         mainMenu.Cursor =
@@ -35,14 +37,30 @@ public class ECMenu(IEvent baseEvent) : IECMenu
         mainMenu.AddItem(new MenuItem(MenuItemType.Button, [new MenuValue("Settings")]));
         mainMenu.AddItem(new MenuItem(MenuItemType.Button, [new MenuValue("Tools")]));
 
-        Menu.SetMenu(controller, mainMenu, (buttons, menu, selectedItem) => 
+        Menu.SetMenu(controller, mainMenu, (buttons, menu, selectedItem) =>
         {
+            if (toSubMenu != GoToSubMenu.None)
+            {
+                switch (toSubMenu)
+                {
+                    case GoToSubMenu.Modes:
+                        baseEvent.getModesServices().BuildModesMenu(controller);
+                        break;
+                    case GoToSubMenu.Maps:
+                        break;
+                    case GoToSubMenu.Settings:
+                        break;
+                    case GoToSubMenu.Tools:
+                        break;
+                }
+            }
+
             if (buttons != MenuButtons.Select) return;
 
             switch (menu.Option)
             {
                 case 0:
-                    controller.PrintLocalizedChat(baseEvent.getBase().Localizer, "test");
+                    baseEvent.getModesServices().BuildModesMenu(controller);
                     break;
                 case 1:
                     controller.PrintLocalizedChat(baseEvent.getBase().Localizer, "test");
@@ -55,5 +73,10 @@ public class ECMenu(IEvent baseEvent) : IECMenu
                     break;
             }
         });
+    }
+
+    public Menu getBaseMenu()
+    {
+        return Menu;
     }
 }

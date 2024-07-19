@@ -2,7 +2,7 @@
 using CounterStrikeSharp.API.Core;
 using CounterStrikeSharp.API.Modules.Commands;
 using plugin.extensions;
-using plugin.services.ECMenuServices;
+using api.plugin.services.menus;
 
 namespace plugin.commands;
 
@@ -12,6 +12,8 @@ public class ECMenuCmd(IEvent eventBase) : Command(eventBase)
     public override void OnCommand(CCSPlayerController? executor, CommandInfo info)
     {
         if (executor == null || !executor.IsReal()) return;
+
+        if (!executor.IsEventCoordinator()) return;
 
         ECMenuService.BuildECMenu(executor);
     }

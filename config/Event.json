@@ -1,0 +1,24 @@
+{
+  "Modes": {
+    "1": {
+      "name": "Minigames",
+      "file": "minigames.cfg",
+      "tags": ["mg", "minigames"]
+    },
+    "2": {
+      "name": "Deathmatch",
+      "file": "deathmatch.cfg",
+      "tags": [ "dm", "deathmatch" ]
+    }
+  },
+  "Settings": {
+    "1": {
+      "name": "AllTalk",
+      "stem": "alltalk"
+    },
+    "2": {
+      "name": "Auto Bhop",
+      "stem": "bhop"
+    }
+  }
+}

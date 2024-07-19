@@ -1,7 +1,7 @@
 using plugin;
 using CounterStrikeSharp.API.Core;
 using api.plugin.services;
-using plugin.services.ECMenuServices;
+using api.plugin.services.menus;
 
 namespace api.plugin;
 public interface IEvent : IPluginConfig<EventConfig>
@@ -10,4 +10,5 @@ public interface IEvent : IPluginConfig<EventConfig>
     IStatusService getStatusService();
     IAnnouncer getAnnouncer();
     IECMenu getECMenu();
+    IModesMenu getModesServices();
 }
