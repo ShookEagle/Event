@@ -6,6 +6,7 @@ using shared.Menu;
 using shared.Menu.enums;
 using plugin.enums;
 using CounterStrikeSharp.API;
+using System.Drawing;
 
 namespace plugin.services.menus;
 public class ECMenu(IEvent baseEvent) : IECMenu
@@ -36,6 +37,7 @@ public class ECMenu(IEvent baseEvent) : IECMenu
         mainMenu.AddItem(new MenuItem(MenuItemType.Button, [new MenuValue("Maps")]));
         mainMenu.AddItem(new MenuItem(MenuItemType.Button, [new MenuValue("Settings")]));
         mainMenu.AddItem(new MenuItem(MenuItemType.Button, [new MenuValue("Tools")]));
+        mainMenu.AddItem(new MenuItem(MenuItemType.Button, [new MenuValue("Reset") { Prefix = "<font color=\"#9900FF\">", Suffix = "<font color=\"#FFFFFF\">" }]));
 
         Menu.SetMenu(controller, mainMenu, (buttons, menu, selectedItem) =>
         {
@@ -69,6 +71,9 @@ public class ECMenu(IEvent baseEvent) : IECMenu
                     controller.PrintLocalizedChat(baseEvent.getBase().Localizer, "test");
                     break;
                 case 3:
+                    controller.PrintLocalizedChat(baseEvent.getBase().Localizer, "test");
+                    break;
+                case 4:
                     controller.PrintLocalizedChat(baseEvent.getBase().Localizer, "test");
                     break;
             }

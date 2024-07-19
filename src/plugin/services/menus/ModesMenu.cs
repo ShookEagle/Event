@@ -8,6 +8,7 @@ using plugin.extensions;
 using plugin.modelsl;
 using shared.Menu;
 using shared.Menu.enums;
+using System.Net.Sockets;
 
 namespace plugin.services.menus;
 
@@ -59,13 +60,18 @@ public class ModesMenu(IEvent baseEvent) : IModesMenu
                 return;
             }
 
-            /*Server.ExecuteCommand($"exec \"utils/unload_plugins.cfg\"");
-            //Set Mapgroup Internally Here
-            Server.ExecuteCommand($"hostname \"=(eGO)= | EVENTS | {selectedMode.Name.ToUpper()} | EdgeGamers.com\"");
-            Server.ExecuteCommand($"sv_tags event, events, ego, edgegamers, {selectedMode.Tags.ToString()}");*/
-            announcer.AnnounceChanges(AnnoncementType.ModeChange, controller, "Changed the mode to", selectedMode.Name);
-            activeMode = selectedMode.Name;
+            ExecuteMode(controller, selectedMode);
         });
+    }
+
+    public void ExecuteMode(CCSPlayerController executor, Mode mode)
+    {
+        //Server.ExecuteCommand($"exec \"utils/unload_plugins.cfg\"");
+        //Set Mapgroup Internally Here
+        Server.ExecuteCommand($"hostname \"=(eGO)= | EVENTS | {mode.Name.ToUpper()} | EdgeGamers.com\"");
+        Server.ExecuteCommand($"sv_tags event, events, ego, edgegamers, {String.Join(", ", mode.Tags?.ToArray()!)}");
+        announcer.AnnounceChanges(AnnoncementType.ModeChange, executor, "Changed the mode to", mode.Name);
+        activeMode = mode.Name;
     }
 
     public List<Mode> GetModesFromJson()
@@ -83,7 +89,8 @@ public class ModesMenu(IEvent baseEvent) : IModesMenu
                     {
                         Name = modeValue["name"]?.GetValue<string>() ?? string.Empty,
                         File = modeValue["file"]?.GetValue<string>() ?? string.Empty,
-                        Tags = modeValue["tags"]?.AsArray().Select(t => t!.GetValue<string>()).ToList() ?? new List<string>()
+                        Tags = modeValue["tags"]?.AsArray().Select(t => t!.GetValue<string>()).ToList() ?? new List<string>(),
+                        MapGroup = modeValue["mapgroup"]?.GetValue<string>() ?? "mg_active"
                     };
                     modesList.Add(modeObj);
                 }

@@ -3,22 +3,26 @@
     "1": {
       "name": "Minigames",
       "file": "minigames.cfg",
-      "tags": ["mg", "minigames"]
+      "tags": [ "mg", "minigames" ],
+      "mapgroup": "mg_mg"
     },
     "2": {
       "name": "Deathmatch",
       "file": "deathmatch.cfg",
-      "tags": [ "dm", "deathmatch" ]
+      "tags": [ "dm", "deathmatch" ],
+      "mapgroup":  "mg_dm"
     }
   },
   "Settings": {
     "1": {
       "name": "AllTalk",
-      "stem": "alltalk"
+      "stem": "alltalk",
+      "default": "false"
     },
     "2": {
       "name": "Auto Bhop",
-      "stem": "bhop"
+      "stem": "bhop",
+      "default": "false"
     }
   }
 }
