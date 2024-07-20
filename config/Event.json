@@ -123,7 +123,7 @@
     "21": {
       "name": "Tag",
       "file": "tag.cfg",
-      "tags": [ "tag", "hns", "seek", "kz" ],
+      "tags": [ "tag", "hns", "seek", "kz"],
       "mapgroup": "mg_tag"
     }
   },
@@ -158,1661 +158,449 @@
       "stem": "weapondropping",
       "default": "true"
     }
-  },
+  }
   "Map Groups": {
     "mg_active": {
-      "1": {
-        "name": "de_ancient",
-        "id": ""
-      },
-      "2": {
-        "name": "de_anubis",
-        "id": ""
-      },
-      "3": {
-        "name": "de_inferno",
-        "id": ""
-      },
-      "4": {
-        "name": "de_mirage",
-        "id": ""
-      },
-      "5": {
-        "name": "de_nuke",
-        "id": ""
-      },
-      "6": {
-        "name": "de_dust2",
-        "id": ""
-      },
-      "7": {
-        "name": "de_vertigo",
-        "id": ""
-      }
+      "1": { "name": "de_ancient", "id": "" },
+      "2": { "name": "de_anubis", "id": "" },
+      "3": { "name": "de_inferno", "id": "" },
+      "4": { "name": "de_mirage", "id": "" },
+      "5": { "name": "de_nuke", "id": "" },
+      "6": { "name": "de_dust2", "id": "" },
+      "7": { "name": "de_vertigo", "id": "" }
     },
     "mg_comp": {
-      "1": {
-        "name": "cs_italy",
-        "id": ""
-      },
-      "2": {
-        "name": "cs_office",
-        "id": ""
-      },
-      "3": {
-        "name": "de_vertigo",
-        "id": ""
-      },
-      "4": {
-        "name": "de_ancient",
-        "id": ""
-      },
-      "5": {
-        "name": "de_anubis",
-        "id": ""
-      },
-      "6": {
-        "name": "de_dust2",
-        "id": ""
-      },
-      "7": {
-        "name": "de_inferno",
-        "id": ""
-      },
-      "8": {
-        "name": "de_mirage",
-        "id": ""
-      },
-      "9": {
-        "name": "de_nuke",
-        "id": ""
-      },
-      "10": {
-        "name": "de_overpass",
-        "id": ""
-      },
-      "11": {
-        "name": "de_train",
-        "id": "3070284539"
-      },
-      "12": {
-        "name": "de_canals",
-        "id": "3070598534"
-      },
-      "13": {
-        "name": "de_agency",
-        "id": "3070584943"
-      },
-      "14": {
-        "name": "de_assembly",
-        "id": "3071005299"
-      },
-      "15": {
-        "name": "de_cbble",
-        "id": "3070212801"
-      },
-      "16": {
-        "name": "cs_assault",
-        "id": "3070594412"
-      },
-      "17": {
-        "name": "de_cache",
-        "id": "3070244931"
-      },
-      "18": {
-        "name": "de_pipeline",
-        "id": "3079872050"
-      },
-      "19": {
-        "name": "de_biome",
-        "id": "3075706807"
-      },
-      "20": {
-        "name": "mp_raid",
-        "id": "3070346180"
-      },
-      "21": {
-        "name": "de_mutiny",
-        "id": "3070766070"
-      },
-      "22": {
-        "name": "de_ruins_d_prefab",
-        "id": "3072352643"
-      },
-      "23": {
-        "name": "cs_militia",
-        "id": "3089953774"
-      },
-      "24": {
-        "name": "de_aztec",
-        "id": "3070960099"
-      },
-      "25": {
-        "name": "de_akiba",
-        "id": "3108513658"
-      }
+      "1": { "name": "cs_italy", "id": "" },
+      "2": { "name": "cs_office", "id": "" },
+      "3": { "name": "de_vertigo", "id": "" },
+      "4": { "name": "de_ancient", "id": "" },
+      "5": { "name": "de_anubis", "id": "" },
+      "6": { "name": "de_dust2", "id": "" },
+      "7": { "name": "de_inferno", "id": "" },
+      "8": { "name": "de_mirage", "id": "" },
+      "9": { "name": "de_nuke", "id": "" },
+      "10": { "name": "de_overpass", "id": "" },
+      "11": { "name": "de_train", "id": "3070284539" },
+      "12": { "name": "de_canals", "id": "3070598534" },
+      "13": { "name": "de_agency", "id": "3070584943" },
+      "14": { "name": "de_assembly", "id": "3071005299" },
+      "15": { "name": "de_cbble", "id": "3070212801" },
+      "16": { "name": "cs_assault", "id": "3070594412" },
+      "17": { "name": "de_cache", "id": "3070244931" },
+      "18": { "name": "de_pipeline", "id": "3079872050" },
+      "19": { "name": "de_biome", "id": "3075706807" },
+      "20": { "name": "mp_raid", "id": "3070346180" },
+      "21": { "name": "de_mutiny", "id": "3070766070" },
+      "22": { "name": "de_ruins_d_prefab", "id": "3072352643" },
+      "23": { "name": "cs_militia", "id": "3089953774" },
+      "24": { "name": "de_aztec", "id": "3070960099" },
+      "25": { "name": "de_akiba", "id": "3108513658" }
     },
     "mg_wingman": {
-      "1": {
-        "name": "cs_italy",
-        "id": ""
-      },
-      "2": {
-        "name": "cs_office",
-        "id": ""
-      },
-      "3": {
-        "name": "de_vertigo",
-        "id": ""
-      },
-      "4": {
-        "name": "de_ancient",
-        "id": ""
-      },
-      "5": {
-        "name": "de_anubis",
-        "id": ""
-      },
-      "6": {
-        "name": "de_dust2",
-        "id": ""
-      },
-      "7": {
-        "name": "de_inferno",
-        "id": ""
-      },
-      "8": {
-        "name": "de_mirage",
-        "id": ""
-      },
-      "9": {
-        "name": "de_nuke",
-        "id": ""
-      },
-      "10": {
-        "name": "de_overpass",
-        "id": ""
-      },
-      "11": {
-        "name": "ar_shoots",
-        "id": ""
-      },
-      "12": {
-        "name": "ar_baggage",
-        "id": ""
-      },
-      "13": {
-        "name": "gd_rialto",
-        "id": "3085490518"
-      },
-      "14": {
-        "name": "de_safehouse",
-        "id": "3070550406"
-      },
-      "15": {
-        "name": "de_lake",
-        "id": "3070563536"
-      },
-      "16": {
-        "name": "de_bank",
-        "id": "3070581293"
-      },
-      "17": {
-        "name": "de_shortdust",
-        "id": "3070612859"
-      },
-      "18": {
-        "name": "de_assembly",
-        "id": "3071005299"
-      },
-      "19": {
-        "name": "de_cbble",
-        "id": "3070212801"
-      },
-      "20": {
-        "name": "de_cache",
-        "id": "3070244931"
-      },
-      "21": {
-        "name": "de_pipeline",
-        "id": "3079872050"
-      },
-      "22": {
-        "name": "de_biome",
-        "id": "3075706807"
-      },
-      "23": {
-        "name": "mp_raid",
-        "id": "3070346180"
-      },
-      "24": {
-        "name": "de_mutiny",
-        "id": "3070766070"
-      },
-      "25": {
-        "name": "cs_assault",
-        "id": "3070594412"
-      },
-      "26": {
-        "name": "de_ruins_d_prefab",
-        "id": "3072352643"
-      }
+      "1": { "name": "cs_italy", "id": "" },
+      "2": { "name": "cs_office", "id": "" },
+      "3": { "name": "de_vertigo", "id": "" },
+      "4": { "name": "de_ancient", "id": "" },
+      "5": { "name": "de_anubis", "id": "" },
+      "6": { "name": "de_dust2", "id": "" },
+      "7": { "name": "de_inferno", "id": "" },
+      "8": { "name": "de_mirage", "id": "" },
+      "9": { "name": "de_nuke", "id": "" },
+      "10": { "name": "de_overpass", "id": "" },
+      "11": { "name": "ar_shoots", "id": "" },
+      "12": { "name": "ar_baggage", "id": "" },
+      "13": { "name": "gd_rialto", "id": "3085490518" },
+      "14": { "name": "de_safehouse", "id": "3070550406" },
+      "15": { "name": "de_lake", "id": "3070563536" },
+      "16": { "name": "de_bank", "id": "3070581293" },
+      "17": { "name": "de_shortdust", "id": "3070612859" },
+      "18": { "name": "de_assembly", "id": "3071005299" },
+      "19": { "name": "de_cbble", "id": "3070212801" },
+      "20": { "name": "de_cache", "id": "3070244931" },
+      "21": { "name": "de_pipeline", "id": "3079872050" },
+      "22": { "name": "de_biome", "id": "3075706807" },
+      "23": { "name": "mp_raid", "id": "3070346180" },
+      "24": { "name": "de_mutiny", "id": "3070766070" },
+      "25": { "name": "cs_assault", "id": "3070594412" },
+      "26": { "name": "de_ruins_d_prefab", "id": "3072352643" }
     },
     "mg_dm": {
-      "1": {
-        "name": "cs_italy",
-        "id": ""
-      },
-      "2": {
-        "name": "cs_office",
-        "id": ""
-      },
-      "3": {
-        "name": "de_vertigo",
-        "id": ""
-      },
-      "4": {
-        "name": "de_ancient",
-        "id": ""
-      },
-      "5": {
-        "name": "de_anubis",
-        "id": ""
-      },
-      "6": {
-        "name": "de_dust2",
-        "id": ""
-      },
-      "7": {
-        "name": "de_inferno",
-        "id": ""
-      },
-      "8": {
-        "name": "de_mirage",
-        "id": ""
-      },
-      "9": {
-        "name": "de_nuke",
-        "id": ""
-      },
-      "10": {
-        "name": "de_overpass",
-        "id": ""
-      },
-      "11": {
-        "name": "ar_shoots",
-        "id": ""
-      },
-      "12": {
-        "name": "ar_baggage",
-        "id": ""
-      },
-      "13": {
-        "name": "ar_lunacy",
-        "id": "3070560242"
-      },
-      "14": {
-        "name": "ar_monastery",
-        "id": "3070547153"
-      },
-      "15": {
-        "name": "gd_rialto",
-        "id": "3085490518"
-      },
-      "16": {
-        "name": "de_safehouse",
-        "id": "3070550406"
-      },
-      "17": {
-        "name": "de_lake",
-        "id": "3070563536"
-      },
-      "18": {
-        "name": "de_bank",
-        "id": "3070581293"
-      },
-      "19": {
-        "name": "de_shortdust",
-        "id": "3070612859"
-      },
-      "20": {
-        "name": "fy_pool_day",
-        "id": "3070923343"
-      },
-      "21": {
-        "name": "fy_iceworld",
-        "id": "3070238628"
-      },
-      "22": {
-        "name": "daymare",
-        "id": "3072640420"
-      },
-      "23": {
-        "name": "aim_theorem",
-        "id": "3070348309"
-      },
-      "24": {
-        "name": "de_assembly",
-        "id": "3071005299"
-      },
-      "25": {
-        "name": "de_cbble",
-        "id": "3070212801"
-      },
-      "26": {
-        "name": "de_cache",
-        "id": "3070244931"
-      },
-      "27": {
-        "name": "de_pipeline",
-        "id": "3079872050"
-      },
-      "28": {
-        "name": "de_biome",
-        "id": "3075706807"
-      },
-      "29": {
-        "name": "dm_desk",
-        "id": "3077599381"
-      },
-      "30": {
-        "name": "fun_bounce",
-        "id": "3088183343"
-      },
-      "31": {
-        "name": "1v1aim_map_longdustversion_d",
-        "id": "3082605693"
-      },
-      "32": {
-        "name": "ar_churches_s2r",
-        "id": "3070291913"
-      },
-      "33": {
-        "name": "mcdonalds",
-        "id": "3134466699"
-      },
-      "34": {
-        "name": "aim_ag_texture_city_advanced",
-        "id": "3082113929"
-      },
-      "35": {
-        "name": "traningoutside",
-        "id": "3080973179"
-      },
-      "36": {
-        "name": "shipment_version_1_0",
-        "id": "3086555291"
-      },
-      "37": {
-        "name": "aim_ag_texture2",
-        "id": "3074961197"
-      },
-      "38": {
-        "name": "aim_ag_texture_jungle",
-        "id": "3095778105"
-      },
-      "39": {
-        "name": "cs2_bloodstrike",
-        "id": "3071890065"
-      },
-      "40": {
-        "name": "gg_simpsons_vs_flanders_v2",
-        "id": "3109232789"
-      },
-      "41": {
-        "name": "de_akiba",
-        "id": "3108513658"
-      },
-      "42": {
-        "name": "cs_facingworlds-99",
-        "id": "3112806723"
-      }
+      "1": { "name": "cs_italy", "id": "" },
+      "2": { "name": "cs_office", "id": "" },
+      "3": { "name": "de_vertigo", "id": "" },
+      "4": { "name": "de_ancient", "id": "" },
+      "5": { "name": "de_anubis", "id": "" },
+      "6": { "name": "de_dust2", "id": "" },
+      "7": { "name": "de_inferno", "id": "" },
+      "8": { "name": "de_mirage", "id": "" },
+      "9": { "name": "de_nuke", "id": "" },
+      "10": { "name": "de_overpass", "id": "" },
+      "11": { "name": "ar_shoots", "id": "" },
+      "12": { "name": "ar_baggage", "id": "" },
+      "13": { "name": "ar_lunacy", "id": "3070560242" },
+      "14": { "name": "ar_monastery", "id": "3070547153" },
+      "15": { "name": "gd_rialto", "id": "3085490518" },
+      "16": { "name": "de_safehouse", "id": "3070550406" },
+      "17": { "name": "de_lake", "id": "3070563536" },
+      "18": { "name": "de_bank", "id": "3070581293" },
+      "19": { "name": "de_shortdust", "id": "3070612859" },
+      "20": { "name": "fy_pool_day", "id": "3070923343" },
+      "21": { "name": "fy_iceworld", "id": "3070238628" },
+      "22": { "name": "daymare", "id": "3072640420" },
+      "23": { "name": "aim_theorem", "id": "3070348309" },
+      "24": { "name": "de_assembly", "id": "3071005299" },
+      "25": { "name": "de_cbble", "id": "3070212801" },
+      "26": { "name": "de_cache", "id": "3070244931" },
+      "27": { "name": "de_pipeline", "id": "3079872050" },
+      "28": { "name": "de_biome", "id": "3075706807" },
+      "29": { "name": "dm_desk", "id": "3077599381" },
+      "30": { "name": "fun_bounce", "id": "3088183343" },
+      "31": { "name": "1v1aim_map_longdustversion_d", "id": "3082605693" },
+      "32": { "name": "ar_churches_s2r", "id": "3070291913" },
+      "33": { "name": "mcdonalds", "id": "3134466699" },
+      "34": { "name": "aim_ag_texture_city_advanced", "id": "3082113929" },
+      "35": { "name": "traningoutside", "id": "3080973179" },
+      "36": { "name": "shipment_version_1_0", "id": "3086555291" },
+      "37": { "name": "aim_ag_texture2", "id": "3074961197" },
+      "38": { "name": "aim_ag_texture_jungle", "id": "3095778105" },
+      "39": { "name": "cs2_bloodstrike", "id": "3071890065" },
+      "40": { "name": "gg_simpsons_vs_flanders_v2", "id": "3109232789" },
+      "41": { "name": "de_akiba", "id": "3108513658" },
+      "42": { "name": "cs_facingworlds-99", "id": "3112806723" }
     },
     "mg_gg": {
-      "1": {
-        "name": "cs_italy",
-        "id": ""
-      },
-      "2": {
-        "name": "cs_office",
-        "id": ""
-      },
-      "3": {
-        "name": "de_vertigo",
-        "id": ""
-      },
-      "4": {
-        "name": "de_ancient",
-        "id": ""
-      },
-      "5": {
-        "name": "de_anubis",
-        "id": ""
-      },
-      "6": {
-        "name": "de_dust2",
-        "id": ""
-      },
-      "7": {
-        "name": "de_inferno",
-        "id": ""
-      },
-      "8": {
-        "name": "de_mirage",
-        "id": ""
-      },
-      "9": {
-        "name": "de_nuke",
-        "id": ""
-      },
-      "10": {
-        "name": "de_overpass",
-        "id": ""
-      },
-      "11": {
-        "name": "ar_shoots",
-        "id": ""
-      },
-      "12": {
-        "name": "ar_baggage",
-        "id": ""
-      },
-      "13": {
-        "name": "ar_lunacy",
-        "id": "3070560242"
-      },
-      "14": {
-        "name": "ar_monastery",
-        "id": "3070547153"
-      },
-      "15": {
-        "name": "gd_rialto",
-        "id": "3085490518"
-      },
-      "16": {
-        "name": "de_safehouse",
-        "id": "3070550406"
-      },
-      "17": {
-        "name": "de_lake",
-        "id": "3070563536"
-      },
-      "18": {
-        "name": "de_bank",
-        "id": "3070581293"
-      },
-      "19": {
-        "name": "de_shortdust",
-        "id": "3070612859"
-      },
-      "20": {
-        "name": "fy_pool_day",
-        "id": "3070923343"
-      },
-      "21": {
-        "name": "fy_iceworld",
-        "id": "3070238628"
-      },
-      "22": {
-        "name": "daymare",
-        "id": "3072640420"
-      },
-      "23": {
-        "name": "aim_theorem",
-        "id": "3070348309"
-      },
-      "24": {
-        "name": "de_assembly",
-        "id": "3071005299"
-      },
-      "25": {
-        "name": "de_cbble",
-        "id": "3070212801"
-      },
-      "26": {
-        "name": "de_cache",
-        "id": "3070244931"
-      },
-      "27": {
-        "name": "de_pipeline",
-        "id": "3079872050"
-      },
-      "28": {
-        "name": "de_biome",
-        "id": "3075706807"
-      },
-      "29": {
-        "name": "dm_desk",
-        "id": "3077599381"
-      },
-      "30": {
-        "name": "fun_bounce",
-        "id": "3088183343"
-      },
-      "31": {
-        "name": "1v1aim_map_longdustversion_d",
-        "id": "3082605693"
-      },
-      "32": {
-        "name": "ar_churches_s2r",
-        "id": "3070291913"
-      },
-      "33": {
-        "name": "mcdonalds",
-        "id": "3134466699"
-      },
-      "34": {
-        "name": "aim_ag_texture_city_advanced",
-        "id": "3082113929"
-      },
-      "35": {
-        "name": "traningoutside",
-        "id": "3080973179"
-      },
-      "36": {
-        "name": "shipment_version_1_0",
-        "id": "3086555291"
-      },
-      "37": {
-        "name": "aim_ag_texture2",
-        "id": "3074961197"
-      },
-      "38": {
-        "name": "aim_ag_texture_jungle",
-        "id": "3095778105"
-      },
-      "39": {
-        "name": "cs2_bloodstrike",
-        "id": "3071890065"
-      },
-      "40": {
-        "name": "gg_simpsons_vs_flanders_v2",
-        "id": "3109232789"
-      },
-      "41": {
-        "name": "de_akiba",
-        "id": "3108513658"
-      },
-      "42": {
-        "name": "cs_facingworlds-99",
-        "id": "3112806723"
-      }
+      "1": { "name": "cs_italy", "id": "" },
+      "2": { "name": "cs_office", "id": "" },
+      "3": { "name": "de_vertigo", "id": "" },
+      "4": { "name": "de_ancient", "id": "" },
+      "5": { "name": "de_anubis", "id": "" },
+      "6": { "name": "de_dust2", "id": "" },
+      "7": { "name": "de_inferno", "id": "" },
+      "8": { "name": "de_mirage", "id": "" },
+      "9": { "name": "de_nuke", "id": "" },
+      "10": { "name": "de_overpass", "id": "" },
+      "11": { "name": "ar_shoots", "id": "" },
+      "12": { "name": "ar_baggage", "id": "" },
+      "13": { "name": "ar_lunacy", "id": "3070560242" },
+      "14": { "name": "ar_monastery", "id": "3070547153" },
+      "15": { "name": "gd_rialto", "id": "3085490518" },
+      "16": { "name": "de_safehouse", "id": "3070550406" },
+      "17": { "name": "de_lake", "id": "3070563536" },
+      "18": { "name": "de_bank", "id": "3070581293" },
+      "19": { "name": "de_shortdust", "id": "3070612859" },
+      "20": { "name": "fy_pool_day", "id": "3070923343" },
+      "21": { "name": "fy_iceworld", "id": "3070238628" },
+      "22": { "name": "daymare", "id": "3072640420" },
+      "23": { "name": "aim_theorem", "id": "3070348309" },
+      "24": { "name": "de_assembly", "id": "3071005299" },
+      "25": { "name": "de_cbble", "id": "3070212801" },
+      "26": { "name": "de_cache", "id": "3070244931" },
+      "27": { "name": "de_pipeline", "id": "3079872050" },
+      "28": { "name": "de_biome", "id": "3075706807" },
+      "29": { "name": "dm_desk", "id": "3077599381" },
+      "30": { "name": "fun_bounce", "id": "3088183343" },
+      "31": { "name": "1v1aim_map_longdustversion_d", "id": "3082605693" },
+      "32": { "name": "ar_churches_s2r", "id": "3070291913" },
+      "33": { "name": "mcdonalds", "id": "3134466699" },
+      "34": { "name": "aim_ag_texture_city_advanced", "id": "3082113929" },
+      "35": { "name": "traningoutside", "id": "3080973179" },
+      "36": { "name": "shipment_version_1_0", "id": "3086555291" },
+      "37": { "name": "aim_ag_texture2", "id": "3074961197" },
+      "38": { "name": "aim_ag_texture_jungle", "id": "3095778105" },
+      "39": { "name": "cs2_bloodstrike", "id": "3071890065" },
+      "40": { "name": "gg_simpsons_vs_flanders_v2", "id": "3109232789" },
+      "41": { "name": "de_akiba", "id": "3108513658" },
+      "42": { "name": "cs_facingworlds-99", "id": "3112806723" }
     },
     "mg_1v1": {
-      "1": {
-        "name": "1v1_redline_multiarena",
-        "id": "3139172262"
-      }
+      "1": { "name": "1v1_redline_multiarena", "id": "3139172262" }
     },
     "mg_awp": {
-      "1": {
-        "name": "awp_bhop_rocket",
-        "id": "3142070597"
-      },
-      "2": {
-        "name": "awp_surf_summer_cs2",
-        "id": "3081829228"
-      },
-      "3": {
-        "name": "awp_tabletop",
-        "id": "3175901430"
-      },
-      "4": {
-        "name": "awp_creek",
-        "id": "3081154235"
-      },
-      "5": {
-        "name": "awp_smalltemple",
-        "id": "2256327285"
-      },
-      "6": {
-        "name": "awp_heights",
-        "id": "3187699950"
-      },
-      "7": {
-        "name": "awp_museum",
-        "id": "3147942004"
-      },
-      "8": {
-        "name": "awp_gulag",
-        "id": "3234949468"
-      },
-      "9": {
-        "name": "awp_milkyway",
-        "id": "3232093157"
-      },
-      "10": {
-        "name": "awp_minecraft_castle",
-        "id": "3109027085"
-      },
-      "11": {
-        "name": "awp_lego2",
-        "id": "3077655898"
-      },
-      "12": {
-        "name": "awp_lego2_carton",
-        "id": "3210314247"
-      },
-      "13": {
-        "name": "awp_lego2_winter",
-        "id": "3088944650"
-      },
-      "14": {
-        "name": "awp_india",
-        "id": "3070290869"
-      },
-      "15": {
-        "name": "awp_lego_3d",
-        "id": "3240327667"
-      },
-      "16": {
-        "name": "awp_heights",
-        "id": "3187699950"
-      },
-      "17": {
-        "name": "awp_simpsons_street",
-        "id": "3176702668"
-      }
+      "1": { "name": "awp_bhop_rocket", "id": "3142070597" },
+      "2": { "name": "awp_surf_summer_cs2", "id": "3081829228" },
+      "3": { "name": "awp_tabletop", "id": "3175901430" },
+      "4": { "name": "awp_creek", "id": "3081154235" },
+      "5": { "name": "awp_smalltemple", "id": "2256327285" },
+      "6": { "name": "awp_heights", "id": "3187699950" },
+      "7": { "name": "awp_museum", "id": "3147942004" },
+      "8": { "name": "awp_gulag", "id": "3234949468" },
+      "9": { "name": "awp_milkyway", "id": "3232093157" },
+      "10": { "name": "awp_minecraft_castle", "id": "3109027085" },
+      "11": { "name": "awp_lego2", "id": "3077655898" },
+      "12": { "name": "awp_lego2_carton", "id": "3210314247" },
+      "13": { "name": "awp_lego2_winter", "id": "3088944650" },
+      "14": { "name": "awp_india", "id": "3070290869" },
+      "15": { "name": "awp_lego_3d", "id": "3240327667" },
+      "16": { "name": "awp_heights", "id": "3187699950" },
+      "17": { "name": "awp_simpsons_street", "id": "3176702668" }
     },
     "mg_course": {
-      "1": {
-        "name": "mg_100traps",
-        "id": "3198747928"
-      },
-      "2": {
-        "name": "mg_savetheisland",
-        "id": "3239475921"
-      },
-      "3": {
-        "name": "mg_lego_course_2",
-        "id": "3202752274"
-      },
-      "4": {
-        "name": "mg_balistic_course",
-        "id": "3164692527"
-      },
-      "5": {
-        "name": "mg_cypher_cs2",
-        "id": "3200157057"
-      },
-      "6": {
-        "name": "mg_circle_course_v3",
-        "id": "3070434475"
-      },
-      "7": {
-        "name": "mg_sonic_course_v2",
-        "id": "3070452642"
-      },
-      "8": {
-        "name": "mg_saw_v64_cs2",
-        "id": "3106085501"
-      },
-      "9": {
-        "name": "mg_ruin_course",
-        "id": "3165539530"
-      },
-      "10": {
-        "name": "mg_sonic_islands_v4",
-        "id": "3166488259"
-      },
-      "11": {
-        "name": "mg_skygrass_balkanstar",
-        "id": "3161554251"
-      },
-      "12": {
-        "name": "mg_acrophobia_run_v2",
-        "id": "3070463620"
-      },
-      "13": {
-        "name": "mg_qube_course",
-        "id": "3129272566"
-      },
-      "14": {
-        "name": "mg_bob4",
-        "id": "3214686410"
-      },
-      "15": {
-        "name": "mg_toxic_course_v2",
-        "id": "3070462770"
-      },
-      "16": {
-        "name": "mg_minecraft_adventure",
-        "id": "3166464513"
-      },
-      "17": {
-        "name": "mg_metro_course_v2",
-        "id": "3070463151"
-      },
-      "18": {
-        "name": "mg_metal_course_v3",
-        "id": "3070464208"
-      },
-      "19": {
-        "name": "mg_sky_realm_v3",
-        "id": "3070451616"
-      },
-      "20": {
-        "name": "mg_mdxkr_course_v1",
-        "id": "2743167305"
-      },
-      "21": {
-        "name": "mg_last_light_v3",
-        "id": "3070458707"
-      },
-      "22": {
-        "name": "mg_nxr_course_v2",
-        "id": "3070455191"
-      },
-      "23": {
-        "name": "mg_lego_course_v2",
-        "id": "3070448153"
-      },
-      "24": {
-        "name": "mg_alley_course_v2",
-        "id": "3070455802"
-      },
-      "25": {
-        "name": "mg_kegs_course",
-        "id": "3206261435"
-      },
-      "26": {
-        "name": "mg_glave_course_v2",
-        "id": "3070445185"
-      },
-      "27": {
-        "name": "mg_simpsons_course_v2",
-        "id": "3070447697"
-      }
+      "1": { "name": "mg_100traps", "id": "3198747928" },
+      "2": { "name": "mg_savetheisland", "id": "3239475921" },
+      "3": { "name": "mg_lego_course_2", "id": "3202752274" },
+      "4": { "name": "mg_balistic_course", "id": "3164692527" },
+      "5": { "name": "mg_cypher_cs2", "id": "3200157057" },
+      "6": { "name": "mg_circle_course_v3", "id": "3070434475" },
+      "7": { "name": "mg_sonic_course_v2", "id": "3070452642" },
+      "8": { "name": "mg_saw_v64_cs2", "id": "3106085501" },
+      "9": { "name": "mg_ruin_course", "id": "3165539530" },
+      "10": { "name": "mg_sonic_islands_v4", "id": "3166488259" },
+      "11": { "name": "mg_skygrass_balkanstar", "id": "3161554251" },
+      "12": { "name": "mg_acrophobia_run_v2", "id": "3070463620" },
+      "13": { "name": "mg_qube_course", "id": "3129272566" },
+      "14": { "name": "mg_bob4", "id": "3214686410" },
+      "15": { "name": "mg_toxic_course_v2", "id": "3070462770" },
+      "16": { "name": "mg_minecraft_adventure", "id": "3166464513" },
+      "17": { "name": "mg_metro_course_v2", "id": "3070463151" },
+      "18": { "name": "mg_metal_course_v3", "id": "3070464208" },
+      "19": { "name": "mg_sky_realm_v3", "id": "3070451616" },
+      "20": { "name": "mg_mdxkr_course_v1", "id": "2743167305" },
+      "21": { "name": "mg_last_light_v3", "id": "3070458707" },
+      "22": { "name": "mg_nxr_course_v2", "id": "3070455191" },
+      "23": { "name": "mg_lego_course_v2", "id": "3070448153" },
+      "24": { "name": "mg_alley_course_v2", "id": "3070455802" },
+      "25": { "name": "mg_kegs_course", "id": "3206261435" },
+      "26": { "name": "mg_glave_course_v2", "id": "3070445185" },
+      "27": { "name": "mg_simpsons_course_v2", "id": "3070447697" }
     },
     "mg_deathrun": {
-      "1": {
-        "name": "deathrun_playground",
-        "id": "3164611860"
-      },
-      "2": {
-        "name": "deathrun_civilization",
-        "id": "3188021118"
-      },
-      "3": {
-        "name": "deathrun_iceworld_cs2",
-        "id": "3083325292"
-      },
-      "4": {
-        "name": "deathrun_neon",
-        "id": "3121646965"
-      },
-      "5": {
-        "name": "deahtrun_source_cube",
-        "id": "3070920602"
-      },
-      "6": {
-        "name": "deahtrun_minecraft_snow",
-        "id": "3087572822"
-      },
-      "7": {
-        "name": "deathrun_cartoon",
-        "id": "3134889370"
-      },
-      "8": {
-        "name": "deathrun_wraith",
-        "id": "3088106480"
-      },
-      "9": {
-        "name": "deathrun_castlerun",
-        "id": "3169207723"
-      }
+      "1": { "name": "deathrun_playground", "id": "3164611860" },
+      "2": { "name": "deathrun_civilization", "id": "3188021118" },
+      "3": { "name": "deathrun_iceworld_cs2", "id": "3083325292" },
+      "4": { "name": "deathrun_neon", "id": "3121646965" },
+      "5": { "name": "deahtrun_source_cube", "id": "3070920602" },
+      "6": { "name": "deahtrun_minecraft_snow", "id": "3087572822" },
+      "7": { "name": "deathrun_cartoon", "id": "3134889370" },
+      "8": { "name": "deathrun_wraith", "id": "3088106480" },
+      "9": { "name": "deathrun_castlerun", "id": "3169207723" }
     },
     "mg_hns": {
-      "1": {
-        "name": "hns_arctic_vault",
-        "id": "3153530766"
-      },
-      "2": {
-        "name": "hns_depot",
-        "id": "3142354975"
-      },
-      "3": {
-        "name": "hns_freddy_fazbears",
-        "id": "3150746597"
-      },
-      "4": {
-        "name": "hns_seektown",
-        "id": "3074479691"
-      },
-      "5": {
-        "name": "hns_center_city",
-        "id": "3245249456"
-      },
-      "6": {
-        "name": "hns_inside_pyramid",
-        "id": "3216213823"
-      },
-      "7": {
-        "name": "hns_inner_city",
-        "id": "3210358859"
-      },
-      "8": {
-        "name": "hns_big_city",
-        "id": "3209711351"
-      },
-      "9": {
-        "name": "hns_inferno_s2",
-        "id": "3097563690"
-      },
-      "10": {
-        "name": "hns_vertigo",
-        "id": "3254008718"
-      },
-      "11": {
-        "name": "hns_putin_vs_trollface",
-        "id": "3255966930"
-      },
-      "12": {
-        "name": "hns_lake",
-        "id": "3071094345"
-      },
-      "13": {
-        "name": "hns_winterday",
-        "id": "3208241300"
-      },
-      "14": {
-        "name": "hns_lego_remake",
-        "id": "3122367230"
-      },
-      "15": {
-        "name": "hns_sandstone",
-        "id": "3153006472"
-      },
-      "16": {
-        "name": "hns_fear_house",
-        "id": "3223413039"
-      },
-      "17": {
-        "name": "hns_japanese_street",
-        "id": "3239990532"
-      }
+      "1": { "name": "hns_arctic_vault", "id": "3153530766" },
+      "2": { "name": "hns_depot", "id": "3142354975" },
+      "3": { "name": "hns_freddy_fazbears", "id": "3150746597" },
+      "4": { "name": "hns_seektown", "id": "3074479691" },
+      "5": { "name": "hns_center_city", "id": "3245249456" },
+      "6": { "name": "hns_inside_pyramid", "id": "3216213823" },
+      "7": { "name": "hns_inner_city", "id": "3210358859" },
+      "8": { "name": "hns_big_city", "id": "3209711351" },
+      "9": { "name": "hns_inferno_s2", "id": "3097563690" },
+      "10": { "name": "hns_vertigo", "id": "3254008718" },
+      "11": { "name": "hns_putin_vs_trollface", "id": "3255966930" },
+      "12": { "name": "hns_lake", "id": "3071094345" },
+      "13": { "name": "hns_winterday", "id": "3208241300" },
+      "14": { "name": "hns_lego_remake", "id": "3122367230" },
+      "15": { "name": "hns_sandstone", "id": "3153006472" },
+      "16": { "name": "hns_fear_house", "id": "3223413039" },
+      "17": { "name": "hns_japanese_street", "id": "3239990532" }
     },
     "mg_kz": {
-      "1": {
-        "name": "kz_only_up",
-        "id": "3074758439"
-      },
-      "2": {
-        "name": "kz_psp",
-        "id": "3024998968"
-      },
-      "3": {
-        "name": "kz_hub_singleplayer",
-        "id": "3070220367"
-      },
-      "4": {
-        "name": "kz_grotto",
-        "id": "3121168339"
-      },
-      "5": {
-        "name": "kz_checkmate",
-        "id": "3070194623"
-      },
-      "6": {
-        "name": "kz_panda",
-        "id": "400818612"
-      },
-      "7": {
-        "name": "kz_ehcivec_final",
-        "id": "3082213334"
-      },
-      "8": {
-        "name": "kz_phamous",
-        "id": "3104579274"
-      },
-      "9": {
-        "name": "kz_igneous",
-        "id": "3102712799"
-      },
-      "10": {
-        "name": "kz_victoria",
-        "id": "3086304337"
-      }
+      "1": { "name": "kz_only_up", "id": "3074758439" },
+      "2": { "name": "kz_psp", "id": "3024998968" },
+      "3": { "name": "kz_hub_singleplayer", "id": "3070220367" },
+      "4": { "name": "kz_grotto", "id": "3121168339" },
+      "5": { "name": "kz_checkmate", "id": "3070194623" },
+      "6": { "name": "kz_panda", "id": "400818612" },
+      "7": { "name": "kz_ehcivec_final", "id": "3082213334" },
+      "8": { "name": "kz_phamous", "id": "3104579274" },
+      "9": { "name": "kz_igneous", "id": "3102712799" },
+      "10": { "name": "kz_victoria", "id": "3086304337" }
     },
     "mg_mg": {
-      "1": {
-        "name": "mg_lego_multigames",
-        "id": "3097973183"
-      },
-      "2": {
-        "name": "mg_skeet_multigames_v7",
-        "id": "3082120895"
-      },
-      "3": {
-        "name": "mg_legospace_multigames",
-        "id": "3188024686"
-      },
-      "4": {
-        "name": "mg_thc_lego_multigames",
-        "id": "3218692982"
-      },
-      "5": {
-        "name": "mg_n64_goldeneye",
-        "id": "3095601524"
-      },
-      "6": {
-        "name": "mg_swag_multigames_v7",
-        "id": "3101960156"
-      },
-      "7": {
-        "name": "mg_devine_multigames",
-        "id": "3111582979"
-      },
-      "8": {
-        "name": "mg_wl_multigames",
-        "id": "3156615586"
-      },
-      "9": {
-        "name": "mg_01Minecraftminigame",
-        "id": "3141424006"
-      },
-      "10": {
-        "name": "mg_pudding_multigames",
-        "id": "3242033080"
-      }
+      "1": { "name": "mg_lego_multigames", "id": "3097973183" },
+      "2": { "name": "mg_skeet_multigames_v7", "id": "3082120895" },
+      "3": { "name": "mg_legospace_multigames", "id": "3188024686" },
+      "4": { "name": "mg_thc_lego_multigames", "id": "3218692982" },
+      "5": { "name": "mg_n64_goldeneye", "id": "3095601524" },
+      "6": { "name": "mg_swag_multigames_v7", "id": "3101960156" },
+      "7": { "name": "mg_devine_multigames", "id": "3111582979" },
+      "8": { "name": "mg_wl_multigames", "id": "3156615586" },
+      "9": { "name": "mg_01Minecraftminigame", "id": "3141424006" },
+      "10": { "name": "mg_pudding_multigames", "id": "3242033080" }
     },
     "mg_sk": {
-      "1": {
-        "name": "ar_shoots",
-        "id": ""
-      },
-      "2": {
-        "name": "ar_dizzy",
-        "id": ""
-      },
-      "3": {
-        "name": "de_lake",
-        "id": ""
-      },
-      "4": {
-        "name": "de_safehouse",
-        "id": ""
-      },
-      "5": {
-        "name": "ar_lunacy",
-        "id": ""
-      },
-      "6": {
-        "name": "scoutzknivez_random_gm_cs2",
-        "id": "3106527136"
-      },
-      "7": {
-        "name": "scoutzknivez_pure",
-        "id": "3073929825"
-      },
-      "8": {
-        "name": "scoutz_skylands2_rc1",
-        "id": "3162212495"
-      },
-      "9": {
-        "name": "scoutzknivez_legacy",
-        "id": "3150679341"
-      },
-      "10": {
-        "name": "scoutzknivez_redux",
-        "id": "3124524650"
-      },
-      "11": {
-        "name": "scoutzknivez_se",
-        "id": "3120526105"
-      }
+      "1": { "name": "ar_shoots", "id": "" },
+      "2": { "name": "ar_dizzy", "id": "" },
+      "3": { "name": "de_lake", "id": "" },
+      "4": { "name": "de_safehouse", "id": "" },
+      "5": { "name": "ar_lunacy", "id": "" },
+      "6": { "name": "scoutzknivez_random_gm_cs2", "id": "3106527136" },
+      "7": { "name": "scoutzknivez_pure", "id": "3073929825" },
+      "8": { "name": "scoutz_skylands2_rc1", "id": "3162212495" },
+      "9": { "name": "scoutzknivez_legacy", "id": "3150679341" },
+      "10": { "name": "scoutzknivez_redux", "id": "3124524650" },
+      "11": { "name": "scoutzknivez_se", "id": "3120526105" }
     },
     "mg_ze": {
-      "1": {
-        "name": "ze_frostdrake_tower_p",
-        "id": "3120465300"
-      },
-      "2": {
-        "name": "ze_backrroms_deathbed",
-        "id": "3174524746"
-      },
-      "3": {
-        "name": "ze_s_a_m",
-        "id": "3217227843"
-      },
-      "4": {
-        "name": "ze_requiem",
-        "id": "3134550710"
-      },
-      "5": {
-        "name": "ze_pools",
-        "id": "3075014275"
-      },
-      "6": {
-        "name": "ze_chronus",
-        "id": "3091942084"
-      },
-      "7": {
-        "name": "ze_obf_npst",
-        "id": "3229383490"
-      },
-      "8": {
-        "name": "ze_loom",
-        "id": "3214940342"
-      },
-      "9": {
-        "name": "ze_ffxiv_reisen_temple",
-        "id": "3220221743"
-      },
-      "10": {
-        "name": "ze_obj_rampage_v1",
-        "id": "3159812985"
-      },
-      "11": {
-        "name": "ze_starwars_v2fix",
-        "id": "3123260164"
-      },
-      "12": {
-        "name": "ze_aware",
-        "id": "3251593033"
-      },
-      "13": {
-        "name": "ze_omochix_cs2",
-        "id": "3238552190"
-      },
-      "14": {
-        "name": "ze_purification_a1",
-        "id": "3128279930"
-      },
-      "15": {
-        "name": "ze_celestial_ops",
-        "id": "3150912938"
-      },
-      "16": {
-        "name": "ze_waterpark",
-        "id": "3145775550"
-      },
-      "17": {
-        "name": "ze_bathroom",
-        "id": "3250974096"
-      },
-      "18": {
-        "name": "ze_sandstorm",
-        "id": "3148296430"
-      },
-      "19": {
-        "name": "ze_arcana_heart",
-        "id": "3248842358"
-      },
-      "20": {
-        "name": "ze_boatescape_ultimate",
-        "id": "3217056098"
-      },
-      "21": {
-        "name": "ze_rataouille",
-        "id": "3258064134"
-      },
-      "22": {
-        "name": "ze_ffvii_fake_reactor",
-        "id": "3136003731"
-      },
-      "23": {
-        "name": "ze_popkart",
-        "id": "3247766438"
-      },
-      "24": {
-        "name": "ze_ultra_ungent_a2_cs2",
-        "id": "3111525416"
-      },
-      "25": {
-        "name": "ze_goobers_basement",
-        "id": "3159840177"
-      },
-      "26": {
-        "name": "ze_obf_filth",
-        "id": "3160547491"
-      },
-      "27": {
-        "name": "ze_offliner",
-        "id": "3255547370"
-      },
-      "28": {
-        "name": "ze_clockwork",
-        "id": "3248464092"
-      },
-      "29": {
-        "name": "ze_sens",
-        "id": "3231216655"
-      },
-      "30": {
-        "name": "ze_forsaken_temple",
-        "id": "3247462748"
-      },
-      "31": {
-        "name": "ze_eternal_journey",
-        "id": "3225822266"
-      },
-      "32": {
-        "name": "ze_anzalone",
-        "id": "3113561170"
-      },
-      "33": {
-        "name": "ze_legends_of_dawn",
-        "id": "3244020906"
-      },
-      "34": {
-        "name": "ze_jurassicpark",
-        "id": "3083543662"
-      },
-      "35": {
-        "name": "ze_pokemon_kanto_v1",
-        "id": "3100100976"
-      },
-      "36": {
-        "name": "ze_elevator_escape",
-        "id": "3135918205"
-      },
-      "37": {
-        "name": "ze_atix_apocalypse",
-        "id": "3087543130"
-      },
-      "38": {
-        "name": "ze_oneiros",
-        "id": "3111583269"
-      },
-      "39": {
-        "name": "ze_minecraft_sakura",
-        "id": "3184013959"
-      },
-      "40": {
-        "name": "ze_minecraft_p",
-        "id": "3215084604"
-      },
-      "41": {
-        "name": "ze_otakuroom",
-        "id": "3128321209"
-      },
-      "42": {
-        "name": "ze_dystopia",
-        "id": "3159658783"
-      },
-      "43": {
-        "name": "ze_luciddreams_cs2",
-        "id": "3177491488"
-      }
+      "1": { "name": "ze_frostdrake_tower_p", "id": "3120465300" },
+      "2": { "name": "ze_backrroms_deathbed", "id": "3174524746" },
+      "3": { "name": "ze_s_a_m", "id": "3217227843" },
+      "4": { "name": "ze_requiem", "id": "3134550710" },
+      "5": { "name": "ze_pools", "id": "3075014275" },
+      "6": { "name": "ze_chronus", "id": "3091942084" },
+      "7": { "name": "ze_obf_npst", "id": "3229383490" },
+      "8": { "name": "ze_loom", "id": "3214940342" },
+      "9": { "name": "ze_ffxiv_reisen_temple", "id": "3220221743" },
+      "10": { "name": "ze_obj_rampage_v1", "id": "3159812985" },
+      "11": { "name": "ze_starwars_v2fix", "id": "3123260164" },
+      "12": { "name": "ze_aware", "id": "3251593033" },
+      "13": { "name": "ze_omochix_cs2", "id": "3238552190" },
+      "14": { "name": "ze_purification_a1", "id": "3128279930" },
+      "15": { "name": "ze_celestial_ops", "id": "3150912938" },
+      "16": { "name": "ze_waterpark", "id": "3145775550" },
+      "17": { "name": "ze_bathroom", "id": "3250974096" },
+      "18": { "name": "ze_sandstorm", "id": "3148296430" },
+      "19": { "name": "ze_arcana_heart", "id": "3248842358" },
+      "20": { "name": "ze_boatescape_ultimate", "id": "3217056098" },
+      "21": { "name": "ze_rataouille", "id": "3258064134" },
+      "22": { "name": "ze_ffvii_fake_reactor", "id": "3136003731" },
+      "23": { "name": "ze_popkart", "id": "3247766438" },
+      "24": { "name": "ze_ultra_ungent_a2_cs2", "id": "3111525416" },
+      "25": { "name": "ze_goobers_basement", "id": "3159840177" },
+      "26": { "name": "ze_obf_filth", "id": "3160547491" },
+      "27": { "name": "ze_offliner", "id": "3255547370" },
+      "28": { "name": "ze_clockwork", "id": "3248464092" },
+      "29": { "name": "ze_sens", "id": "3231216655" },
+      "30": { "name": "ze_forsaken_temple", "id": "3247462748" },
+      "31": { "name": "ze_eternal_journey", "id": "3225822266" },
+      "32": { "name": "ze_anzalone", "id": "3113561170" },
+      "33": { "name": "ze_legends_of_dawn", "id": "3244020906" },
+      "34": { "name": "ze_jurassicpark", "id": "3083543662" },
+      "35": { "name": "ze_pokemon_kanto_v1", "id": "3100100976" },
+      "36": { "name": "ze_elevator_escape", "id": "3135918205" },
+      "37": { "name": "ze_atix_apocalypse", "id": "3087543130" },
+      "38": { "name": "ze_oneiros", "id": "3111583269" },
+      "39": { "name": "ze_minecraft_sakura", "id": "3184013959" },
+      "40": { "name": "ze_minecraft_p", "id": "3215084604" },
+      "41": { "name": "ze_otakuroom", "id": "3128321209" },
+      "42": { "name": "ze_dystopia", "id": "3159658783" },
+      "43": { "name": "ze_luciddreams_cs2", "id": "3177491488" }
     },
     "mg_bhop": {
-      "1": {
-        "name": "bhop_emevaelx3",
-        "id": "3070665979"
-      },
-      "2": {
-        "name": "bhop_drainage",
-        "id": "3172855488"
-      },
-      "3": {
-        "name": "bhop_dunedash",
-        "id": "3118806244"
-      },
-      "4": {
-        "name": "bhop_moonlight",
-        "id": "3076544885"
-      },
-      "5": {
-        "name": "bhop_nubia",
-        "id": "3109833435"
-      },
-      "6": {
-        "name": "bhop_colour",
-        "id": "3071726325"
-      },
-      "7": {
-        "name": "bhop_surf_qvo_v2",
-        "id": "3144925633"
-      },
-      "8": {
-        "name": "bhop_arcturus",
-        "id": "3088973190"
-      },
-      "9": {
-        "name": "bhop_ancientcanal",
-        "id": "3123452538"
-      },
-      "10": {
-        "name": "bhop_kz_deadcore",
-        "id": "3079982220"
-      },
-      "11": {
-        "name": "bhop_quack",
-        "id": "3141309610"
-      },
-      "12": {
-        "name": "bhop_masyunya",
-        "id": "3097960903"
-      },
-      "13": {
-        "name": "bhop_vaporwave",
-        "id": "3247326328"
-      },
-      "14": {
-        "name": "bhop_internetclub",
-        "id": "3103286752"
-      },
-      "15": {
-        "name": "bhop_inui",
-        "id": "3243210449"
-      },
-      "16": {
-        "name": "bhop_rushb",
-        "id": "1598613474"
-      },
-      "17": {
-        "name": "bhop_bobop",
-        "id": "3101765983"
-      },
-      "18": {
-        "name": "bhop_blue_shade",
-        "id": "3104379928"
-      },
-      "19": {
-        "name": "bhop_nira",
-        "id": "3096649903"
-      },
-      "20": {
-        "name": "bhop_water",
-        "id": "3070288532"
-      },
-      "21": {
-        "name": "bhop_64_speedrun",
-        "id": "3114012728"
-      },
-      "22": {
-        "name": "bhop_cherryblossom",
-        "id": "3082038560"
-      },
-      "23": {
-        "name": "bhop_eazy_v2",
-        "id": "3081481596"
-      },
-      "24": {
-        "name": "bhop_lunti",
-        "id": "3109417361"
-      },
-      "25": {
-        "name": "bhop_huni",
-        "id": "3152170149"
-      },
-      "26": {
-        "name": "bhop_oxom",
-        "id": "3142053238"
-      },
-      "27": {
-        "name": "bhop_xulazu",
-        "id": "3103289668"
-      },
-      "28": {
-        "name": "bhop_leaf",
-        "id": "3082035041"
-      },
-      "29": {
-        "name": "bhop_woodenxd",
-        "id": "3098907976"
-      },
-      "30": {
-        "name": "bhop_fur",
-        "id": "3072307280"
-      },
-      "31": {
-        "name": "bhop_aso_wood",
-        "id": "3087827316"
-      },
-      "32": {
-        "name": "bhop_koreiskoe",
-        "id": "3100057866"
-      },
-      "33": {
-        "name": "bhop_japan",
-        "id": "3208753449"
-      },
-      "34": {
-        "name": "bhop_kore",
-        "id": "3141944428"
-      },
-      "35": {
-        "name": "bhop_coma",
-        "id": "3105540958"
-      },
-      "36": {
-        "name": "bhop_hilton",
-        "id": "3073065218"
-      },
-      "37": {
-        "name": "bhop_inline",
-        "id": "3099514856"
-      },
-      "38": {
-        "name": "bhop_symphony",
-        "id": "3240618381"
-      },
-      "39": {
-        "name": "bhop_rippcpie",
-        "id": "3109454970"
-      },
-      "40": {
-        "name": "bhop_gottagofast",
-        "id": "3096641929"
-      },
-      "41": {
-        "name": "bhop_dreamworld",
-        "id": "3078155262"
-      },
-      "42": {
-        "name": "bhop_inch",
-        "id": "3076733461"
-      },
-      "43": {
-        "name": "bhop_lego_rnm_r",
-        "id": "3099876385"
-      },
-      "44": {
-        "name": "bhop_teti_r",
-        "id": "3099754930"
-      },
-      "45": {
-        "name": "bhop_gloom",
-        "id": "3094633618"
-      }
+      "1": { "name": "bhop_emevaelx3", "id": "3070665979" },
+      "2": { "name": "bhop_drainage", "id": "3172855488" },
+      "3": { "name": "bhop_dunedash", "id": "3118806244" },
+      "4": { "name": "bhop_moonlight", "id": "3076544885" },
+      "5": { "name": "bhop_nubia", "id": "3109833435" },
+      "6": { "name": "bhop_colour", "id": "3071726325" },
+      "7": { "name": "bhop_surf_qvo_v2", "id": "3144925633" },
+      "8": { "name": "bhop_arcturus", "id": "3088973190" },
+      "9": { "name": "bhop_ancientcanal", "id": "3123452538" },
+      "10": { "name": "bhop_kz_deadcore", "id": "3079982220" },
+      "11": { "name": "bhop_quack", "id": "3141309610" },
+      "12": { "name": "bhop_masyunya", "id": "3097960903" },
+      "13": { "name": "bhop_vaporwave", "id": "3247326328" },
+      "14": { "name": "bhop_internetclub", "id": "3103286752" },
+      "15": { "name": "bhop_inui", "id": "3243210449" },
+      "16": { "name": "bhop_rushb", "id": "1598613474" },
+      "17": { "name": "bhop_bobop", "id": "3101765983" },
+      "18": { "name": "bhop_blue_shade", "id": "3104379928" },
+      "19": { "name": "bhop_nira", "id": "3096649903" },
+      "20": { "name": "bhop_water", "id": "3070288532" },
+      "21": { "name": "bhop_64_speedrun", "id": "3114012728" },
+      "22": { "name": "bhop_cherryblossom", "id": "3082038560" },
+      "23": { "name": "bhop_eazy_v2", "id": "3081481596" },
+      "24": { "name": "bhop_lunti", "id": "3109417361" },
+      "25": { "name": "bhop_huni", "id": "3152170149" },
+      "26": { "name": "bhop_oxom", "id": "3142053238" },
+      "27": { "name": "bhop_xulazu", "id": "3103289668" },
+      "28": { "name": "bhop_leaf", "id": "3082035041" },
+      "29": { "name": "bhop_woodenxd", "id": "3098907976" },
+      "30": { "name": "bhop_fur", "id": "3072307280" },
+      "31": { "name": "bhop_aso_wood", "id": "3087827316" },
+      "32": { "name": "bhop_koreiskoe", "id": "3100057866" },
+      "33": { "name": "bhop_japan", "id": "3208753449" },
+      "34": { "name": "bhop_kore", "id": "3141944428" },
+      "35": { "name": "bhop_coma", "id": "3105540958" },
+      "36": { "name": "bhop_hilton", "id": "3073065218" },
+      "37": { "name": "bhop_inline", "id": "3099514856" },
+      "38": { "name": "bhop_symphony", "id": "3240618381" },
+      "39": { "name": "bhop_rippcpie", "id": "3109454970" },
+      "40": { "name": "bhop_gottagofast", "id": "3096641929" },
+      "41": { "name": "bhop_dreamworld", "id": "3078155262" },
+      "42": { "name": "bhop_inch", "id": "3076733461" },
+      "43": { "name": "bhop_lego_rnm_r", "id": "3099876385" },
+      "44": { "name": "bhop_teti_r", "id": "3099754930" },
+      "45": { "name": "bhop_gloom", "id": "3094633618" }
     },
     "mg_surf": {
-      "1": {
-        "name": "surf_utopia_njv",
-        "id": "3073875025"
-      },
-      "2": {
-        "name": "surf_kitsune",
-        "id": "3076153623"
-      },
-      "3": {
-        "name": "surf_1win",
-        "id": "3231028283"
-      },
-      "4": {
-        "name": "surf_boreas",
-        "id": "3133346713"
-      },
-      "5": {
-        "name": "surf_beginner",
-        "id": "3070321829"
-      },
-      "6": {
-        "name": "surf_nyx",
-        "id": "3129698096"
-      },
-      "7": {
-        "name": "surf_evo",
-        "id": "3075725935"
-      },
-      "8": {
-        "name": "surf_deathstar",
-        "id": "3080544577"
-      },
-      "9": {
-        "name": "surf_mesa_revo",
-        "id": "3076980482"
-      },
-      "10": {
-        "name": "surf_atrium",
-        "id": "3130141240"
-      },
-      "11": {
-        "name": "surf_me",
-        "id": "3248211716"
-      },
-      "12": {
-        "name": "surf_inui",
-        "id": "3255525511"
-      },
-      "13": {
-        "name": "surf_aircontrol_ksf",
-        "id": "3230699916"
-      },
-      "14": {
-        "name": "surf_ing",
-        "id": "3124210799"
-      },
-      "15": {
-        "name": "surf_genesis",
-        "id": "3253243697"
-      },
-      "16": {
-        "name": "surf_galaxy_easy",
-        "id": "3095216872"
-      },
-      "17": {
-        "name": "surf_sparks",
-        "id": "3224375193"
-      },
-      "18": {
-        "name": "surf_aquaflow",
-        "id": "3255589335"
-      },
-      "19": {
-        "name": "surf_astra",
-        "id": "3165517928"
-      },
-      "20": {
-        "name": "surf_ace",
-        "id": "3088413071"
-      },
-      "21": {
-        "name": "surf_rookie",
-        "id": "3082548297"
-      },
-      "22": {
-        "name": "surf_klue",
-        "id": "3205472654"
-      },
-      "23": {
-        "name": "surf_frostedge",
-        "id": "3120455026"
-      },
-      "24": {
-        "name": "surf_gleam",
-        "id": "3124208103"
-      },
-      "25": {
-        "name": "surf_momentum",
-        "id": "3117160100"
-      },
-      "26": {
-        "name": "surf_benevolent",
-        "id": "3098972556"
-      },
-      "27": {
-        "name": "surf_volvic",
-        "id": "3143583805"
-      },
-      "28": {
-        "name": "surf_cyberwave",
-        "id": "3167714768"
-      },
-      "29": {
-        "name": "surf_skipalot",
-        "id": "3143608161"
-      },
-      "30": {
-        "name": "surf_trazhtec",
-        "id": "3099609523"
-      },
-      "31": {
-        "name": "surf_palm",
-        "id": "3226467978"
-      },
-      "32": {
-        "name": "surf_slob",
-        "id": "3212207205"
-      },
-      "33": {
-        "name": "surf_chasm",
-        "id": "3165925249"
-      },
-      "34": {
-        "name": "surf_juturna",
-        "id": "3155961809"
-      },
-      "35": {
-        "name": "surf_tranquil",
-        "id": "3131555986"
-      },
-      "36": {
-        "name": "surf_hades",
-        "id": "3165927091"
-      },
-      "37": {
-        "name": "surf_mesa_aether",
-        "id": "3125360522"
-      },
-      "38": {
-        "name": "surf_hyzer",
-        "id": "3118603496"
-      },
-      "39": {
-        "name": "surf_longreach",
-        "id": "3105967738"
-      },
-      "40": {
-        "name": "surf_lockdown",
-        "id": "3124212820"
-      },
-      "41": {
-        "name": "surf_technique",
-        "id": "3205490672"
-      },
-      "42": {
-        "name": "surf_quickie",
-        "id": "3165930325"
-      },
-      "43": {
-        "name": "surf_teho",
-        "id": "3124224128"
-      },
-      "44": {
-        "name": "surf_cannonball",
-        "id": "3152119098"
-      },
-      "45": {
-        "name": "surf_sippysip",
-        "id": "3246776437"
-      },
-      "46": {
-        "name": "surf_elysium",
-        "id": "3147764666"
-      }
+      "1": { "name": "surf_utopia_njv", "id": "3073875025" },
+      "2": { "name": "surf_kitsune", "id": "3076153623" },
+      "3": { "name": "surf_1win", "id": "3231028283" },
+      "4": { "name": "surf_boreas", "id": "3133346713" },
+      "5": { "name": "surf_beginner", "id": "3070321829" },
+      "6": { "name": "surf_nyx", "id": "3129698096" },
+      "7": { "name": "surf_evo", "id": "3075725935" },
+      "8": { "name": "surf_deathstar", "id": "3080544577" },
+      "9": { "name": "surf_mesa_revo", "id": "3076980482" },
+      "10": { "name": "surf_atrium", "id": "3130141240" },
+      "11": { "name": "surf_me", "id": "3248211716" },
+      "12": { "name": "surf_inui", "id": "3255525511" },
+      "13": { "name": "surf_aircontrol_ksf", "id": "3230699916" },
+      "14": { "name": "surf_ing", "id": "3124210799" },
+      "15": { "name": "surf_genesis", "id": "3253243697" },
+      "16": { "name": "surf_galaxy_easy", "id": "3095216872" },
+      "17": { "name": "surf_sparks", "id": "3224375193" },
+      "18": { "name": "surf_aquaflow", "id": "3255589335" },
+      "19": { "name": "surf_astra", "id": "3165517928" },
+      "20": { "name": "surf_ace", "id": "3088413071" },
+      "21": { "name": "surf_rookie", "id": "3082548297" },
+      "22": { "name": "surf_klue", "id": "3205472654" },
+      "23": { "name": "surf_frostedge", "id": "3120455026" },
+      "24": { "name": "surf_gleam", "id": "3124208103" },
+      "25": { "name": "surf_momentum", "id": "3117160100" },
+      "26": { "name": "surf_benevolent", "id": "3098972556" },
+      "27": { "name": "surf_volvic", "id": "3143583805" },
+      "28": { "name": "surf_cyberwave", "id": "3167714768" },
+      "29": { "name": "surf_skipalot", "id": "3143608161" },
+      "30": { "name": "surf_trazhtec", "id": "3099609523" },
+      "31": { "name": "surf_palm", "id": "3226467978" },
+      "32": { "name": "surf_slob", "id": "3212207205" },
+      "33": { "name": "surf_chasm", "id": "3165925249" },
+      "34": { "name": "surf_juturna", "id": "3155961809" },
+      "35": { "name": "surf_tranquil", "id": "3131555986" },
+      "36": { "name": "surf_hades", "id": "3165927091" },
+      "37": { "name": "surf_mesa_aether", "id": "3125360522" },
+      "38": { "name": "surf_hyzer", "id": "3118603496" },
+      "39": { "name": "surf_longreach", "id": "3105967738" },
+      "40": { "name": "surf_lockdown", "id": "3124212820" },
+      "41": { "name": "surf_technique", "id": "3205490672" },
+      "42": { "name": "surf_quickie", "id": "3165930325" },
+      "43": { "name": "surf_teho", "id": "3124224128" },
+      "44": { "name": "surf_cannonball", "id": "3152119098" },
+      "45": { "name": "surf_sippysip", "id": "3246776437" },
+      "46": { "name": "surf_elysium", "id": "3147764666" }
     },
     "mg_csurf": {
-      "1": {
-        "name": "surf_castle",
-        "id": "3128904941"
-      },
-      "2": {
-        "name": "surf_aero_violence",
-        "id": "3085314904"
-      },
-      "3": {
-        "name": "surf_ny_bigloop",
-        "id": "3084349344"
-      },
-      "4": {
-        "name": "surf_air_arena",
-        "id": "3074712760"
-      },
-      "5": {
-        "name": "surf_ski_2",
-        "id": "3079877518"
-      },
-      "6": {
-        "name": "surf_4fun_2016",
-        "id": "3233388051"
-      },
-      "7": {
-        "name": "surf_ski_3_nova",
-        "id": "3070274984"
-      },
-      "8": {
-        "name": "surf_dust2_2015",
-        "id": "3085542481"
-      },
-      "9": {
-        "name": "surf_intrepid",
-        "id": "3074951067"
-      },
-      "10": {
-        "name": "surf_greatriver_xdre4m",
-        "id": "3070280215"
-      },
-      "11": {
-        "name": "surf_skyscraper",
-        "id": "3084059372"
-      }
+      "1": { "name": "surf_castle", "id": "3128904941" },
+      "2": { "name": "surf_aero_violence", "id": "3085314904" },
+      "3": { "name": "surf_ny_bigloop", "id": "3084349344" },
+      "4": { "name": "surf_air_arena", "id": "3074712760" },
+      "5": { "name": "surf_ski_2", "id": "3079877518" },
+      "6": { "name": "surf_4fun_2016", "id": "3233388051" },
+      "7": { "name": "surf_ski_3_nova", "id": "3070274984" },
+      "8": { "name": "surf_dust2_2015", "id": "3085542481" },
+      "9": { "name": "surf_intrepid", "id": "3074951067" },
+      "10": { "name": "surf_greatriver_xdre4m", "id": "3070280215" },
+      "11": { "name": "surf_skyscraper", "id": "3084059372" }
     },
     "mg_mirror": {
-      "1": {
-        "name": "de_mirage_mirror",
-        "id": "3112468244"
-      },
-      "2": {
-        "name": "de_dust2_mirror",
-        "id": "3117367319"
-      },
-      "3": {
-        "name": "de_vertigo_mirror",
-        "id": "3235541259"
-      },
-      "4": {
-        "name": "de_nuke_mirror",
-        "id": "3145028641"
-      },
-      "5": {
-        "name": "de_inferno_mirror",
-        "id": "3110463075"
-      },
-      "6": {
-        "name": "de_overpass_mirror",
-        "id": "3114471649"
-      }
+      "1": { "name": "de_mirage_mirror", "id": "3112468244" },
+      "2": { "name": "de_dust2_mirror", "id": "3117367319" },
+      "3": { "name": "de_vertigo_mirror", "id": "3235541259" },
+      "4": { "name": "de_nuke_mirror", "id": "3145028641" },
+      "5": { "name": "de_inferno_mirror", "id": "3110463075" },
+      "6": { "name": "de_overpass_mirror", "id": "3114471649" }
     },
     "mg_tag": {
-      "1": {
-        "name": "hns_freeway",
-        "id": "3100974576"
-      },
-      "2": {
-        "name": "hns_flowtown_v1",
-        "id": "3104421311"
-      },
-      "3": {
-        "name": "hns_bbcity",
-        "id": "3155014834"
-      },
-      "4": {
-        "name": "hns_jukecity",
-        "id": "3132514950"
-      },
-      "5": {
-        "name": "hns_backyard",
-        "id": "3100095412"
-      },
-      "6": {
-        "name": "hns_rooftops",
-        "id": "3131591239"
-      },
-      "7": {
-        "name": "hns_townsquare",
-        "id": "3104048227"
-      },
-      "8": {
-        "name": "hns_vista",
-        "id": "3255585571"
-      },
-      "9": {
-        "name": "hns_tyo_docg",
-        "id": "3209399593"
-      }
+      "1": { "name": "hns_freeway", "id": "3100974576" },
+      "2": { "name": "hns_flowtown_v1", "id": "3104421311" },
+      "3": { "name": "hns_bbcity", "id": "3155014834" },
+      "4": { "name": "hns_jukecity", "id": "3132514950" },
+      "5": { "name": "hns_backyard", "id": "3100095412" },
+      "6": { "name": "hns_rooftops", "id": "3131591239" },
+      "7": { "name": "hns_townsquare", "id": "3104048227" },
+      "8": { "name": "hns_vista", "id": "3255585571" },
+      "9": { "name": "hns_tyo_docg", "id": "3209399593" }
     }
   }
- 
+}
