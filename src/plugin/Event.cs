@@ -45,8 +45,11 @@ public class Event : BasePlugin, IPluginConfig<EventConfig>, IEvent
     public ISettingsService getSettingsService() { return settingsService!; }
     public ISettingsMenu getSettingsMenu() { return settingsMenu!; }
 
+
     public override void Load(bool hotReload)
     {
+       
+
         _ = new ConnectionListener(this);
 
         status = new StatusService(this);

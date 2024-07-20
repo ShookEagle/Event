@@ -64,8 +64,6 @@ public class SettingsService : ISettingsService
         setting.IsActive = !setting.IsActive;
     }
 
-
-
     public List<Setting> GetSettingsFromJson()
     {
         List<Setting> settingsList = new();
