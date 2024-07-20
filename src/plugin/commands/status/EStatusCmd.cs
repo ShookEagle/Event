@@ -19,6 +19,7 @@ public class EStatusCmd(IEvent eventBase) : Command(eventBase)
         }
 
         service.PrintStatus(executor);
+        info.ReplyLocalized(eventBase.getBase().Localizer, "command_status_printed");
     }
 }
 

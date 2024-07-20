@@ -29,7 +29,7 @@ public class SettingsService : ISettingsService
         recentEvents.Clear();
     }
 
-    public void ToggleSetting(Setting setting, CCSPlayerController? executor = null, bool viaCommand = false)
+    public void ToggleSetting(Setting setting, CCSPlayerController executor, bool viaCommand = false)
     {
 
         if (recentEvents.Contains(setting)) return;
@@ -51,6 +51,17 @@ public class SettingsService : ISettingsService
         if (executor != null)
             announcer.AnnounceChanges(type, executor, $"Set {setting.Name} to", target);
         //Server.ExecuteCommand($"exec settings/{setting.Stem}_{suffix}");
+    }
+
+    public void ForceSetting(string stem, string state)
+    {
+        var setting = Settings.FirstOrDefault(s => s.Name == stem);
+        if (setting == null) return;
+        var stateBool = (state == "on") ? true : false;
+
+        if (setting.IsActive == stateBool) return;
+
+        setting.IsActive = !setting.IsActive;
     }
 
 

@@ -77,6 +77,8 @@ public class Event : BasePlugin, IPluginConfig<EventConfig>, IEvent
         commands.Add("css_ec", new ECMenuCmd(this));
         //commands.Add("css_modes", new ModesMenuCmd(this));
 
+        commands.Add("css_forcesetting", new ForceSettingCmd(this));
+
         foreach (var command in commands)
             AddCommand(command.Key, command.Value.Description ?? "No Description Provided", command.Value.OnCommand);
     }

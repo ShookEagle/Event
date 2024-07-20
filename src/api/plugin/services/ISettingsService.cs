@@ -5,7 +5,7 @@ namespace api.plugin.services;
 public interface ISettingsService
 {
     List<Setting> GetSettings();
-    void ToggleSetting(Setting setting, CCSPlayerController? executor = null, bool viaCommand = false);
-
+    void ToggleSetting(Setting setting, CCSPlayerController executor, bool viaCommand = false);
+    void ForceSetting(string stem, string state);
     void ClearHashset();
 }
