@@ -22,6 +22,9 @@ public class Event : BasePlugin, IPluginConfig<EventConfig>, IEvent
     private IAnnouncer? announcer;
     private IECMenu? eCMenu;
     private IModesMenu? modesService;
+    private IResetMenu? resetMenu;
+    private ISettingsService? settingsService;
+    private ISettingsMenu? settingsMenu;
 
     public EventConfig Config { get; set; } = new();
     public void OnConfigParsed(EventConfig config)
@@ -38,6 +41,9 @@ public class Event : BasePlugin, IPluginConfig<EventConfig>, IEvent
     public IAnnouncer getAnnouncer() { return announcer!; }
     public IECMenu getECMenu() { return eCMenu!; }
     public IModesMenu getModesServices() { return modesService!; }
+    public IResetMenu getResetMenu() { return resetMenu!; }
+    public ISettingsService getSettingsService() { return settingsService!; }
+    public ISettingsMenu getSettingsMenu() { return settingsMenu!; }
 
     public override void Load(bool hotReload)
     {
@@ -47,6 +53,9 @@ public class Event : BasePlugin, IPluginConfig<EventConfig>, IEvent
         announcer = new AnonymousAnnouncer(this);
         eCMenu = new ECMenu(this);
         modesService = new ModesMenu(this);
+        resetMenu = new ResetMenu(this);
+        settingsService = new SettingsService(this);
+        settingsMenu = new SettingsMenu(this);
 
         LoadCommands();
     }

@@ -11,4 +11,7 @@ public interface IEvent : IPluginConfig<EventConfig>
     IAnnouncer getAnnouncer();
     IECMenu getECMenu();
     IModesMenu getModesServices();
+    IResetMenu getResetMenu();
+    ISettingsMenu getSettingsMenu();
+    ISettingsService getSettingsService();
 }

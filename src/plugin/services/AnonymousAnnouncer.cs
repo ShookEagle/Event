@@ -19,9 +19,9 @@ public class AnonymousAnnouncer(IEvent plugin) : IAnnouncer
             case AnnoncementType.ModeChange:
                 msg = "ec_action_mode"; break;
             case AnnoncementType.SettingDisable:
-                msg = "ec_action_enable"; break;
-            case AnnoncementType.SettingEnable:
                 msg = "ec_action_disable"; break;
+            case AnnoncementType.SettingEnable:
+                msg = "ec_action_enable"; break;
             default: msg = "error_announcement_unkown"; break;
         }
 

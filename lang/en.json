@@ -3,7 +3,7 @@
   "test": "%prefix%This message is for testing | if you see this please contact ShookEagle ",
   "ec_action_map": "%prefix%{darkblue}{0}{grey}{1} {yellow}{2}.",
   "ec_action_mode": "%prefix%{darkblue}{0}{grey}{1} {lightpurple}{2}.",
-  "ec_action_enable": "%prefix%{darkblue}{0}{grey}{1} {lightgreen}{2}.",
+  "ec_action_enable": "%prefix%{darkblue}{0}{grey}{1} {lime}{2}.",
   "ec_action_disable": "%prefix%{darkblue}{0}{grey}{1} {lightred}{2}.",
   "command_status_err_not_started": "%prefix%No event started.",
   "command_status_err_event_started": "%prefix%Event status already started.",
