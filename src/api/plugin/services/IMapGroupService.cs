@@ -1,5 +1,9 @@
-﻿namespace api.plugin.services;
+﻿using plugin.models;
+
+namespace api.plugin.services;
 
 public interface IMapGroupService
 {
+    MapGroup FetchCurrentGroup();
+    void SetMapGroup(string groupId);
 }

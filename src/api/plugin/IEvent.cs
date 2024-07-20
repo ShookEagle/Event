@@ -14,4 +14,6 @@ public interface IEvent : IPluginConfig<EventConfig>
     IResetMenu getResetMenu();
     ISettingsMenu getSettingsMenu();
     ISettingsService getSettingsService();
+    IMapGroupService getMapGroupService();
+    IMapsMenu getMapsMenu();
 }

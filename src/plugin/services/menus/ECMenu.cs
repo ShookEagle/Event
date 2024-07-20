@@ -65,7 +65,7 @@ public class ECMenu(IEvent baseEvent) : IECMenu
                     baseEvent.getModesServices().BuildModesMenu(controller);
                     break;
                 case 1:
-                    controller.PrintLocalizedChat(baseEvent.getBase().Localizer, "test");
+                    baseEvent.getMapsMenu().BuildMapsMenu(controller);
                     break;
                 case 2:
                     baseEvent.getSettingsMenu().BuildSettingsMenu(controller);

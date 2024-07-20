@@ -25,6 +25,8 @@ public class Event : BasePlugin, IPluginConfig<EventConfig>, IEvent
     private IResetMenu? resetMenu;
     private ISettingsService? settingsService;
     private ISettingsMenu? settingsMenu;
+    private IMapGroupService? mapGroupService;
+    private IMapsMenu? mapsMenu;
 
     public EventConfig Config { get; set; } = new();
     public void OnConfigParsed(EventConfig config)
@@ -44,6 +46,8 @@ public class Event : BasePlugin, IPluginConfig<EventConfig>, IEvent
     public IResetMenu getResetMenu() { return resetMenu!; }
     public ISettingsService getSettingsService() { return settingsService!; }
     public ISettingsMenu getSettingsMenu() { return settingsMenu!; }
+    public IMapGroupService getMapGroupService() { return mapGroupService!; }
+    public IMapsMenu getMapsMenu() { return mapsMenu!; }
 
 
     public override void Load(bool hotReload)
@@ -59,6 +63,8 @@ public class Event : BasePlugin, IPluginConfig<EventConfig>, IEvent
         resetMenu = new ResetMenu(this);
         settingsService = new SettingsService(this);
         settingsMenu = new SettingsMenu(this);
+        mapGroupService = new MapGroupService(this);
+        mapsMenu = new MapMenu(this);
 
         LoadCommands();
     }

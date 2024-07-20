@@ -10,53 +10,58 @@ public class MapGroupService : IMapGroupService
     private IEvent baseEvent;
     private IAnnouncer announcer;
     List<MapGroup> mapGroupsList = new();
+    private MapGroup currentGroup;
 
     public MapGroupService(IEvent baseEvent)
     {
         this.baseEvent = baseEvent;
         announcer = baseEvent.getAnnouncer();
         mapGroupsList = GetMapGroupsFromJson();
+        currentGroup = mapGroupsList.FirstOrDefault(g => g.Name == "mg_active")!;
     }
+
+    public MapGroup FetchCurrentGroup()
+    {
+        return currentGroup;
+    }
+
+    public void SetMapGroup(string groupId)
+    {
+        mapGroupsList.FirstOrDefault(g => g.Name == groupId);
+    }
+
     public List<MapGroup> GetMapGroupsFromJson()
     {
-        if (baseEvent.Config.MapGroups == null)
-        {
-            baseEvent.getBase().Logger.LogError("Unable to Fetch map groups from Json");
-            return new List<MapGroup>();
-        }
         var mapGroups = new List<MapGroup>();
+        var mapGroupsJson = baseEvent.Config.MapGroups?.AsObject();
 
-        var mapGroupsJson = baseEvent.Config.MapGroups["Map Groups"]?.AsObject();
-        if (mapGroupsJson != null)
+        if (mapGroupsJson == null) return mapGroups;
+
+        foreach (var mapGroup in mapGroupsJson)
         {
-            foreach (var mapGroup in mapGroupsJson)
+            var mapGroupValue = mapGroup.Value?.AsObject();
+            var mapsJson = mapGroupValue?["maps"]?.AsObject();
+
+            if (mapGroupValue == null || mapsJson == null) continue;
+
+            var mapGroupObj = new MapGroup { Name = mapGroup.Key };
+
+            foreach (var map in mapsJson)
             {
-                var mapGroupValue = mapGroup.Value?.AsObject();
-                if (mapGroupValue != null)
+                var mapValue = map.Value?.AsObject();
+                if (mapValue == null) continue;
+
+                var mapObj = new Map
                 {
-                    var mapGroupObj = new MapGroup
-                    {
-                        Name = mapGroup.Key,
-                    };
-
-                    foreach (var map in mapGroupValue)
-                    {
-                        var mapValue = map.Value?.AsObject();
-                        if (mapValue != null)
-                        {
-                            var mapObj = new Map
-                            {
-                                Name = mapValue["name"]?.GetValue<string>() ?? string.Empty,
-                                WorkshopId = long.TryParse(mapValue["id"]?.GetValue<string>(), out long workshopId) ? workshopId : -1
-                            };
-                            mapGroupObj.Maps.Add(mapObj);
-                        }
-                    }
-
-                    mapGroups.Add(mapGroupObj);
-                }
+                    Name = mapValue["name"]?.GetValue<string>() ?? string.Empty,
+                    WorkshopId = long.TryParse(mapValue["id"]?.GetValue<string>(), out long workshopId) ? workshopId : -1
+                };
+                mapGroupObj.Maps.Add(mapObj);
             }
+
+            mapGroups.Add(mapGroupObj);
         }
+
         return mapGroups;
     }
 }
