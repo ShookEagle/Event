@@ -8,13 +8,13 @@ using plugin.models;
 using shared.Menu.enums;
 using Serilog.Core;
 using Microsoft.Extensions.Logging;
+using CounterStrikeSharp.API;
 
 namespace plugin.services.menus;
 public class MapMenu : IMapsMenu
 {
     private readonly IEvent baseEvent;
     private readonly IAnnouncer announcer;
-    private readonly IMapGroupService groupService;
     private MapGroup currentMapGroup;
     private int activePage = 1;
     private int pageSize = 5;
@@ -28,8 +28,7 @@ public class MapMenu : IMapsMenu
         this.baseEvent = baseEvent;
         announcer = baseEvent.getAnnouncer();
         parentMenu = baseEvent.getECMenu().getBaseMenu();
-        groupService = baseEvent.getMapGroupService();
-        currentMapGroup = groupService.FetchCurrentGroup();
+        currentMapGroup = baseEvent.getMapGroupService().FetchCurrentGroup();
         pageCount = (int)Math.Ceiling((double)currentMapGroup.Maps.Count / pageSize);
 
         Menu.OnDrawMenu += (_, menuEvent) =>
@@ -53,6 +52,9 @@ public class MapMenu : IMapsMenu
 
     public void BuildMapsMenu(CCSPlayerController controller)
     {
+        currentMapGroup = baseEvent.getMapGroupService().FetchCurrentGroup();
+        pageCount = (int)Math.Ceiling((double)currentMapGroup.Maps.Count / pageSize);
+
         var mapsMenu = new MenuBase(new MenuValue("Settings"));
 
         mapsMenu.Cursor =
@@ -105,8 +107,10 @@ public class MapMenu : IMapsMenu
 
                     int ind = ((activePage - 1) * pageSize) + menu.Option;
                     if (ind >= currentMapGroup.Maps.Count) break;
+                    var map = currentMapGroup.Maps[ind];
 
-                    announcer.AnnounceChanges(AnnoncementType.MapChange, controller, "Chnaged the map to", "Map Name here"); //Unfinished
+                    announcer.AnnounceChanges(AnnoncementType.MapChange, controller, "Changed the map to", map.Name);
+                    baseEvent.getMapGroupService().ChangeMap(map);
                     break;
                 default: break;
             }
@@ -121,7 +125,7 @@ public class MapMenu : IMapsMenu
             { Prefix = "<font color=\"#555555\">", Suffix = "<font color=\"#FFFFFF\">" }]);
         }
 
-        return new MenuItem(MenuItemType.Button, [new MenuValue(currentMapGroup.Maps[((page - 1) * pageSize) + slot].Name) 
+        return new MenuItem(MenuItemType.Button, [new MenuValue(currentMapGroup.Maps[((page - 1) * pageSize) + slot].Name)
         { Prefix = "<font color=\"#FFFFFF\">", Suffix = "<font color=\"#FFFFFF\">" }]);
     }
     public List<MenuValue> GetPageSelectorValues()

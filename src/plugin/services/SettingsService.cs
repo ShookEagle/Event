@@ -48,9 +48,10 @@ public class SettingsService : ISettingsService
         var type = (newState) ? AnnoncementType.SettingEnable : AnnoncementType.SettingDisable;
         var target = (newState) ? "Enabled" : "Disabled";
 
+        Server.ExecuteCommand($"exec settings/{setting.Stem}_{suffix}");
+
         if (executor != null)
             announcer.AnnounceChanges(type, executor, $"Set {setting.Name} to", target);
-        //Server.ExecuteCommand($"exec settings/{setting.Stem}_{suffix}");
     }
 
     public void ForceSetting(string stem, string state)
@@ -58,8 +59,11 @@ public class SettingsService : ISettingsService
         var setting = Settings.FirstOrDefault(s => s.Name == stem);
         if (setting == null) return;
         var stateBool = (state == "on") ? true : false;
+        var suffix = (stateBool) ? "on" : "off";
 
         if (setting.IsActive == stateBool) return;
+
+        Server.ExecuteCommand($"exec settings/{setting.Stem}_{suffix}.cfg");
 
         setting.IsActive = !setting.IsActive;
     }

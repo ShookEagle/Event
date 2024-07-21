@@ -49,7 +49,7 @@ public class ResetMenu : IResetMenu
         {
             if (buttons != MenuButtons.Select) return;
 
-            controller.PrintLocalizedChat(baseEvent.getBase().Localizer, "test");
+            announcer.AnnounceToECS()
         });
     }
 }

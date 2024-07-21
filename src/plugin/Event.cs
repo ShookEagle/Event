@@ -7,6 +7,7 @@ using api.plugin.services;
 using CounterStrikeSharp.API.Core;
 using api.plugin.services.menus;
 using plugin.services.menus;
+using plugin.models;
 
 namespace plugin;
 
@@ -52,13 +53,12 @@ public class Event : BasePlugin, IPluginConfig<EventConfig>, IEvent
 
     public override void Load(bool hotReload)
     {
-       
-
         _ = new ConnectionListener(this);
 
         status = new StatusService(this);
         announcer = new AnonymousAnnouncer(this);
         eCMenu = new ECMenu(this);
+        mapGroupService = new MapGroupService(this);
         modesService = new ModesMenu(this);
         resetMenu = new ResetMenu(this);
         settingsService = new SettingsService(this);

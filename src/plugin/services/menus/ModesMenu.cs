@@ -117,7 +117,6 @@ public class ModesMenu : IModesMenu
                     if (ind >= Modes.Count) break;
 
                     ExecuteMode(controller, Modes[ind]);
-                    Server.PrintToChatAll("mode");
                     break;
                 default: break;
             }
@@ -126,12 +125,14 @@ public class ModesMenu : IModesMenu
 
     public void ExecuteMode(CCSPlayerController executor, Mode mode)
     {
-        //Server.ExecuteCommand($"exec \"utils/unload_plugins.cfg\"");
-        //Set Mapgroup Internally Here
-        //Server.ExecuteCommand($"hostname \"=(eGO)= | EVENTS | {mode.Name.ToUpper()} | EdgeGamers.com\"");
-        //Server.ExecuteCommand($"sv_tags event, events, ego, edgegamers, {String.Join(", ", mode.Tags?.ToArray()!)}");
+        Server.ExecuteCommand($"exec \"utils/unload_plugins.cfg\"");
+        baseEvent.getMapGroupService().SetMapGroup(mode.MapGroup);
+        Server.ExecuteCommand($"hostname \"=(eGO)= | EVENTS | {mode.Name.ToUpper()} | EdgeGamers.com\"");
+        Server.ExecuteCommand($"sv_tags event, events, ego, edgegamers, {String.Join(", ", mode.Tags?.ToArray()!)}");
         announcer.AnnounceChanges(AnnoncementType.ModeChange, executor, "Changed the mode to", mode.Name);
         activeMode = mode.Name;
+        //Add Exec After Functionality Here!
+        Server.ExecuteCommand($"exec modes/{mode.File}");
     }
 
     public MenuItem GetItemValue(int page, int slot)
@@ -182,5 +183,4 @@ public class ModesMenu : IModesMenu
         } else baseEvent.getBase().Logger.LogError("Unable to Fetch Modes from Json");
         return modesList.OrderBy(m => m.Name).ToList();
     }
-
 }

@@ -1,5 +1,6 @@
 ﻿using api.plugin;
 using api.plugin.services;
+using CounterStrikeSharp.API;
 using Microsoft.Extensions.Logging;
 using plugin.models;
 using System.Text.Json.Nodes;
@@ -27,7 +28,14 @@ public class MapGroupService : IMapGroupService
 
     public void SetMapGroup(string groupId)
     {
-        mapGroupsList.FirstOrDefault(g => g.Name == groupId);
+       currentGroup = mapGroupsList.FirstOrDefault(g => g.Name == groupId)!;
+    }
+
+    public void ChangeMap(Map map)
+    {
+        if (map.WorkshopId == -1)
+            Server.RunOnTickAsync(Server.TickCount + 128, () => Server.ExecuteCommand($"changelevel {map.Name}"));
+        Server.RunOnTickAsync(Server.TickCount + 128, () => Server.ExecuteCommand($"host_workshop_map {map.WorkshopId}"));
     }
 
     public List<MapGroup> GetMapGroupsFromJson()

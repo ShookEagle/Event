@@ -6,4 +6,5 @@ public interface IMapGroupService
 {
     MapGroup FetchCurrentGroup();
     void SetMapGroup(string groupId);
+    void ChangeMap(Map map);
 }
