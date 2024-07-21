@@ -8,4 +8,5 @@ public interface ISettingsService
     void ToggleSetting(Setting setting, CCSPlayerController executor, bool viaCommand = false);
     void ForceSetting(string stem, string state);
     void ClearHashset();
+    void SetDefaults();
 }

@@ -54,6 +54,17 @@ public class SettingsService : ISettingsService
             announcer.AnnounceChanges(type, executor, $"Set {setting.Name} to", target);
     }
 
+    public void SetDefaults()
+    {
+        foreach (var setting in Settings)
+        {
+            if (setting.IsActive != setting.Default)
+            {
+                setting.IsActive = setting.Default;
+            }
+        }
+    }
+
     public void ForceSetting(string stem, string state)
     {
         var setting = Settings.FirstOrDefault(s => s.Name == stem);

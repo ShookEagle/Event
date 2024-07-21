@@ -5,6 +5,7 @@ using CounterStrikeSharp.API.Core;
 using shared.Menu;
 using shared.Menu.enums;
 using plugin.extensions;
+using CounterStrikeSharp.API;
 
 namespace plugin.services.menus;
 
@@ -49,7 +50,11 @@ public class ResetMenu : IResetMenu
         {
             if (buttons != MenuButtons.Select) return;
 
-            announcer.AnnounceToECS()
+            baseEvent.getMapGroupService().SetMapGroup("mg_active");
+            baseEvent.getSettingsService().SetDefaults();
+            baseEvent.getModesServices().SetNone();
+            announcer.AnnounceToECS(controller, "ec_server_reset");
+            Server.RunOnTickAsync(Server.TickCount + 192, () => Server.ExecuteCommand("changelevel de_dust2"));
         });
     }
 }

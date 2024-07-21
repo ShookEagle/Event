@@ -7,4 +7,5 @@ namespace api.plugin.services.menus;
 public interface IModesMenu
 {
     void BuildModesMenu(CCSPlayerController controller);
+    void SetNone();
 }

@@ -159,6 +159,11 @@ public class ModesMenu : IModesMenu
         return valueList;
     }
 
+    public void SetNone()
+    {
+        activeMode = "None";
+    }
+
     public List<Mode> GetModesFromJson()
     {
         List<Mode> modesList = new();
