@@ -131,7 +131,7 @@
     "1": {
       "name": "AllTalk",
       "stem": "alltalk",
-      "default": "false"
+      "default": "true"
     },
     "2": {
       "name": "Auto Bhop",
@@ -141,7 +141,7 @@
     "3": {
       "name": "Bots",
       "stem": "bots",
-      "default": "true"
+      "default": "false"
     },
     "4": {
       "name": "Buy Menu",

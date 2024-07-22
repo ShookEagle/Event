@@ -24,7 +24,7 @@ public class SettingsService : ISettingsService
     {
         return Settings;
     }
-    public void ClearHashset() //to furture me: I know this how system with the hashset looks crazy. don't try and fix it. this was 3 hours of avoiding the jank solution and fianlly caving in :)
+    public void ClearHashset() //to furture me: I know this whole system with the hashset looks crazy. don't try and fix it. this was 3 hours of avoiding the jank solution and fianlly caving in :)
     {
         recentEvents.Clear();
     }
@@ -67,7 +67,7 @@ public class SettingsService : ISettingsService
 
     public void ForceSetting(string stem, string state)
     {
-        var setting = Settings.FirstOrDefault(s => s.Name == stem);
+        var setting = Settings.FirstOrDefault(s => s.Stem == stem);
         if (setting == null) return;
         var stateBool = (state == "on") ? true : false;
         var suffix = (stateBool) ? "on" : "off";
@@ -76,7 +76,13 @@ public class SettingsService : ISettingsService
 
         Server.ExecuteCommand($"exec settings/{setting.Stem}_{suffix}.cfg");
 
-        setting.IsActive = !setting.IsActive;
+        setting.IsActive = stateBool;
+    }
+
+    public void SetServerToDefaultCFG()
+    {
+        Server.ExecuteCommand("exec utils/server_default.cfg");
+        SetDefaults();
     }
 
     public List<Setting> GetSettingsFromJson()

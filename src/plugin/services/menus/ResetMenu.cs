@@ -54,6 +54,8 @@ public class ResetMenu : IResetMenu
             baseEvent.getSettingsService().SetDefaults();
             baseEvent.getModesServices().SetNone();
             announcer.AnnounceToECS(controller, "ec_server_reset");
+            Server.ExecuteCommand("exec utils/unload_plugins.cfg");
+            baseEvent.getSettingsService().SetServerToDefaultCFG();
             Server.RunOnTickAsync(Server.TickCount + 192, () => Server.ExecuteCommand("changelevel de_dust2"));
         });
     }

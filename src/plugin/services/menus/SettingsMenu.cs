@@ -16,7 +16,6 @@ public class SettingsMenu : ISettingsMenu
 {
     private readonly IEvent baseEvent;
     private readonly IAnnouncer announcer;
-    private readonly ISettingsService settingsService;
     private Menu parentMenu;
     private int activePage = 1;
     private int pageSize = 5;
@@ -29,8 +28,7 @@ public class SettingsMenu : ISettingsMenu
         this.baseEvent = baseEvent;
         announcer = baseEvent.getAnnouncer();
         parentMenu = baseEvent.getECMenu().getBaseMenu();
-        settingsService = baseEvent.getSettingsService();
-        pageCount = (int)Math.Ceiling((double)settingsService.GetSettings().Count / pageSize);
+        pageCount = (int)Math.Ceiling((double)baseEvent.getSettingsService().GetSettings().Count / pageSize);
 
         Menu.OnDrawMenu += (_, menuEvent) =>
         {
@@ -103,10 +101,10 @@ public class SettingsMenu : ISettingsMenu
                     if (selectedItem!.Type != MenuItemType.Button) break;
 
                     int ind = ((activePage - 1) * pageSize) + menu.Option;
-                    if (ind >= settingsService.GetSettings().Count) break;
+                    if (ind >= baseEvent.getSettingsService().GetSettings().Count) break;
 
-                    settingsService.ToggleSetting(settingsService.GetSettings()[ind], controller);
-                    settingsService.ClearHashset();
+                    baseEvent.getSettingsService().ToggleSetting(baseEvent.getSettingsService().GetSettings()[ind], controller);
+                    baseEvent.getSettingsService().ClearHashset();
                     break;
                 default: break;
             }
@@ -115,15 +113,16 @@ public class SettingsMenu : ISettingsMenu
 
     public MenuItem GetItemValue(int page, int slot)
     {
-        if ((((page - 1) * pageSize) + slot) >= settingsService.GetSettings().Count)
+        if ((((page - 1) * pageSize) + slot) >= baseEvent.getSettingsService().GetSettings().Count)
         {
             return new MenuItem(MenuItemType.Button, [new MenuValue("None")
             { Prefix = "<font color=\"#555555\">", Suffix = "<font color=\"#FFFFFF\">" }]);
         }
 
-        var color = (settingsService.GetSettings()[((page - 1) * pageSize) + slot].IsActive) ? "008000" : "FF0000";
-        var symbol = (settingsService.GetSettings()[((page - 1) * pageSize) + slot].IsActive) ? "✔" : "✘";
-        return new MenuItem(MenuItemType.Button, [new MenuValue($"{settingsService.GetSettings()[((page - 1) * pageSize) + slot].Name} - " +
+        var color = (baseEvent.getSettingsService().GetSettings()[((page - 1) * pageSize) + slot].IsActive) ? "008000" : "FF0000";
+        var symbol = (baseEvent.getSettingsService().GetSettings()[((page - 1) * pageSize) + slot].IsActive) ? "✔" : "✘";
+
+        return new MenuItem(MenuItemType.Button, [new MenuValue($"{baseEvent.getSettingsService().GetSettings()[((page - 1) * pageSize) + slot].Name} - " +
             $"<font color=\"#{color}\">{symbol}") { Prefix = "<font color=\"#FFFFFF\">", Suffix = "<font color=\"#FFFFFF\">" }]);
     }
 

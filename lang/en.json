@@ -5,7 +5,7 @@
   "ec_action_mode": "%prefix%{darkblue}{0}{grey}{1} {lightpurple}{2}.",
   "ec_action_enable": "%prefix%{darkblue}{0}{grey}{1} {lime}{2}.",
   "ec_action_disable": "%prefix%{darkblue}{0}{grey}{1} {lightred}{2}.",
-  "ec_server_reset": "%prefix%{darkblue}{0}{grey} {red}reset{grey} the server",
+  "ec_server_reset": "%prefix%{darkblue}{0}{grey} {red}Reset{grey} the server",
   "command_status_err_not_started": "%prefix%{red}No event started.",
   "command_status_err_event_started": "%prefix%{red}Event status already started.",
   "command_status_event_started": "%prefix%{darkblue}{0}{grey} Started event status.",

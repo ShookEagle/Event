@@ -67,6 +67,7 @@ public class Event : BasePlugin, IPluginConfig<EventConfig>, IEvent
         mapsMenu = new MapMenu(this);
 
         LoadCommands();
+        settingsService.SetServerToDefaultCFG();
     }
 
     private void LoadCommands()

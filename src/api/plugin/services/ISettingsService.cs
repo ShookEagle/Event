@@ -9,4 +9,5 @@ public interface ISettingsService
     void ForceSetting(string stem, string state);
     void ClearHashset();
     void SetDefaults();
+    void SetServerToDefaultCFG();
 }
