@@ -11,7 +11,6 @@ public class ConnectionListener(IEvent eventBase)
 {
     IStatusService service = eventBase.getStatusService();
 
-    
     [GameEventHandler]
     public HookResult OnPlayerConnect(EventPlayerConnectFull @event, GameEventInfo info)
     {

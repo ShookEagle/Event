@@ -20,6 +20,7 @@ public class ModesMenu : IModesMenu
     private readonly IEvent baseEvent;
     private readonly IAnnouncer announcer;
     private string activeMode = "None";
+    private string activeModeSettings = String.Empty;
     private int activePage = 1;
     private int pageSize = 5;
     private List<Mode> Modes;
@@ -133,6 +134,13 @@ public class ModesMenu : IModesMenu
         activeMode = mode.Name;
         //Add Exec After Functionality Here!
         Server.ExecuteCommand($"exec modes/{mode.File}");
+        activeModeSettings = $"{mode.File}_settings.cfg";
+        Server.ExecuteCommand("mp_restartgame 1");
+    }
+
+    public void execSettings()
+    {
+        Server.ExecuteCommand($"exec modes/{activeModeSettings}");
     }
 
     public MenuItem GetItemValue(int page, int slot)
@@ -162,6 +170,7 @@ public class ModesMenu : IModesMenu
     public void SetNone()
     {
         activeMode = "None";
+        activeModeSettings = String.Empty;
     }
 
     public List<Mode> GetModesFromJson()

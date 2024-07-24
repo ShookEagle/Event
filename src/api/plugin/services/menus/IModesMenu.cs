@@ -8,4 +8,5 @@ public interface IModesMenu
 {
     void BuildModesMenu(CCSPlayerController controller);
     void SetNone();
+    void execSettings();
 }

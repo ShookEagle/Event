@@ -121,7 +121,6 @@ public class SettingsMenu : ISettingsMenu
 
         var color = (baseEvent.getSettingsService().GetSettings()[((page - 1) * pageSize) + slot].IsActive) ? "008000" : "FF0000";
         var symbol = (baseEvent.getSettingsService().GetSettings()[((page - 1) * pageSize) + slot].IsActive) ? "✔" : "✘";
-
         return new MenuItem(MenuItemType.Button, [new MenuValue($"{baseEvent.getSettingsService().GetSettings()[((page - 1) * pageSize) + slot].Name} - " +
             $"<font color=\"#{color}\">{symbol}") { Prefix = "<font color=\"#FFFFFF\">", Suffix = "<font color=\"#FFFFFF\">" }]);
     }
