@@ -2,127 +2,127 @@
   "Modes": {
     "1": {
       "name": "100 Traps",
-      "file": "100traps.cfg",
+      "file": "100traps",
       "tags": [ "mg", "minigames", "course", "kz", "race" ],
       "mapgroup": "mg_course"
     },
     "2": {
       "name": "1v1",
-      "file": "1v1.cfg",
+      "file": "1v1",
       "tags": [ "1v1", "1vs1", "1", "warmup" ],
       "mapgroup": "mg_1v1"
     },
     "3": {
       "name": "Arms Race",
-      "file": "armsrace.cfg",
+      "file": "armsrace",
       "tags": [ "ar", "arms", "armsrace" ],
       "mapgroup": "mg_gg"
     },
     "4": {
       "name": "AWP Only",
-      "file": "awp.cfg",
+      "file": "awp",
       "tags": [ "awp", "bhop", "only" ],
       "mapgroup": "mg_awp"
     },
     "5": {
       "name": "Bhop",
-      "file": "bhop.cfg",
+      "file": "bhop",
       "tags": [ "bhop", "hop", "bunny", "autohop" ],
       "mapgroup": "mg_bhop"
     },
     "6": {
       "name": "Combat Surf",
-      "file": "combatsurf.cfg",
+      "file": "combatsurf",
       "tags": [ "surf", "combat", "awp", "bhop" ],
       "mapgroup": "mg_csurf"
     },
     "7": {
       "name": "Course",
-      "file": "course.cfg",
+      "file": "course",
       "tags": [ "mg", "minigames", "course", "kz", "race" ],
       "mapgroup": "mg_course"
     },
     "8": {
       "name": "Deathmatch",
-      "file": "deathmatch.cfg",
+      "file": "deathmatch",
       "tags": [ "dm", "deathmatch" ],
       "mapgroup": "mg_dm"
     },
     "9": {
       "name": "Deathrun",
-      "file": "deathrun.cfg",
+      "file": "deathrun",
       "tags": [ "deahtrun", "minigames", "mg", "course" ],
       "mapgroup": "mg_deathrun"
     },
     "10": {
       "name": "Executes",
-      "file": "executes.cfg",
+      "file": "executes",
       "tags": [ "executes", "warmups", "comp" ],
       "mapgroup": "mg_comp"
     },
     "11": {
       "name": "Gun Game",
-      "file": "gungame.cfg",
+      "file": "gungame",
       "tags": [ "gg", "gungame" ],
       "mapgroup": "mg_gg"
     },
     "12": {
       "name": "Hide and Seek",
-      "file": "hideandseek.cfg",
+      "file": "hideandseek",
       "tags": [ "hns", "hide", "seek", "tag" ],
       "mapgroup": "mg_hns"
     },
     "13": {
       "name": "KZ",
-      "file": "kz.cfg",
+      "file": "kzg",
       "tags": [ "kz", "kreedz", "climb" ],
       "mapgroup": "mg_kz"
     },
     "14": {
       "name": "Minigames",
-      "file": "minigames.cfg",
+      "file": "minigames",
       "tags": [ "mg", "minigames", "course", "kz", "race" ],
       "mapgroup": "mg_mg"
     },
     "15": {
       "name": "Mirror Madness",
-      "file": "mirrormadness.cfg",
+      "file": "mirrormadness",
       "tags": [ "mirror", "comp" ],
       "mapgroup": "mg_mirror"
     },
     "16": {
       "name": "Only Up!",
-      "file": "onlyup.cfg",
+      "file": "onlyup",
       "tags": [ "kz", "climb", "onlyup", "course", "race" ],
       "mapgroup": "mg_kz"
     },
     "17": {
       "name": "Retakes",
-      "file": "retakes.cfg",
+      "file": "retakes",
       "tags": [ "retakes", "warmups", "comp" ],
       "mapgroup": "mg_comp"
     },
     "18": {
       "name": "Scoutz Knivez",
-      "file": "scoutzknivez.cfg",
+      "file": "scoutzknivez",
       "tags": [ "flying", "scoutz", "scout", "knife", "knivez" ],
       "mapgroup": "mg_sk"
     },
     "19": {
       "name": "Scrims",
-      "file": "scrims.cfg",
+      "file": "scrims",
       "tags": [ "scrims", "comp", "pugs" ],
       "mapgroup": "mg_comp"
     },
     "20": {
       "name": "Surf",
-      "file": "surf.cfg",
+      "file": "surf",
       "tags": [ "surf" ],
       "mapgroup": "mg_surf"
     },
     "21": {
       "name": "Tag",
-      "file": "tag.cfg",
+      "file": "tag",
       "tags": [ "tag", "hns", "seek", "kz"],
       "mapgroup": "mg_tag"
     }

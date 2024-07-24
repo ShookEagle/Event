@@ -54,6 +54,7 @@ public class Event : BasePlugin, IPluginConfig<EventConfig>, IEvent
     public override void Load(bool hotReload)
     {
         _ = new ConnectionListener(this);
+        _ = new MapStartListener(this);
 
         status = new StatusService(this);
         announcer = new AnonymousAnnouncer(this);

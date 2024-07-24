@@ -133,7 +133,7 @@ public class ModesMenu : IModesMenu
         announcer.AnnounceChanges(AnnoncementType.ModeChange, executor, "Changed the mode to", mode.Name);
         activeMode = mode.Name;
         //Add Exec After Functionality Here!
-        Server.ExecuteCommand($"exec modes/{mode.File}");
+        Server.ExecuteCommand($"exec modes/{mode.File}.cfg");
         activeModeSettings = $"{mode.File}_settings.cfg";
         Server.ExecuteCommand("mp_restartgame 1");
     }

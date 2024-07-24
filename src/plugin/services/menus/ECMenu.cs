@@ -71,7 +71,7 @@ public class ECMenu(IEvent baseEvent) : IECMenu
                     baseEvent.getSettingsMenu().BuildSettingsMenu(controller);
                     break;
                 case 3:
-                    controller.PrintLocalizedChat(baseEvent.getBase().Localizer, "test");
+                    controller.PrintLocalizedChat(baseEvent.getBase().Localizer, "in_dev");
                     break;
                 case 4:
                     baseEvent.getResetMenu().BuildResetMenu(controller);
